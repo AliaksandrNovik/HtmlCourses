@@ -1,0 +1,25 @@
+b{
+    color: #999988;
+    font-size: large;
+}
+h3{
+    color: #999988
+}
+h1{
+    color: #999988
+}
+h4{
+    color: #999988
+}
+b.tag{
+    color: #0086b3;
+    font-size: large
+}
+a.headerTag{
+    color: #0086b3;
+    font-size: larger;
+}
+div.main{
+    width: 70%;
+    margin: 10%
+}
