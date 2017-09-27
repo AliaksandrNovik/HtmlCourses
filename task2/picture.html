@@ -21,12 +21,12 @@
     <p>Так что же нам делать?</p>
     <h2>Текущее общепринятое решение</h2>
     <p>Как правило, вы найдете этот код на любом сайте с адаптивные дизайном:</p>
-    <img src="resources/pictureImgHeight.png" alt="imageStyles" title="imageStyles" width="100%" height="100%"/>
+    <img src="resources/pictureImgHeight.png" alt="imageStyles" title="imageStyles" width="100%" height="200"/>
     <p>Здесь используется <code>max-width: 100%;</code> для гарантии того, что изображение никогда не выйдет
         за пределы ширины родительского контейнера. Если родительский контейнер сжимается до ширины,
         меньшей чем ширина изображения - последнее сжимается вместе с контейнером. Установка <code>height: auto;</code>
         нужна для сохранения пропорций.</p>
-    <img src="resources/devices.png" width="100%" height=491 title="devices" alt="devices">
+    <img src="resources/devices.png" width="100%" height="491" title="devices" alt="devices">
     <p>Проблема решается лишь в одном ключе, позволяя нам показывать одно и то же изображение для всех случаев.
         Но это не дает нам возможность устанавливать разные изображения для разных ситуаций.</p>
     <h2>Как работает <code>&lt;picture&gt;?</code></h2>
@@ -47,7 +47,7 @@
     </ol>
     <p>Вот простой пример, где для случая, когда ширина видимой области меньше 768px - загружается
         уменьшенное (smaller) изображение:</p>
-    <img src="resources/pictureExampleTags.png" alt="Picturetags" title="Picturetags" width="100%">
+    <img src="resources/pictureExampleTags.png" alt="Picturetags" title="Picturetags" width="100%" height="238">
     <p>Можно заметить, что синтаксис, используемый в атрибуте media является таким же, как и при использовании
         в CSS media queries. Вы можете использовать те же самые проверки, т.е. проверять <code>max-width</code>,
         <code>min-width</code>,<code>max-height</code>, <code>min-height</code>, <code>orientation</code> и т.д.</p>
@@ -57,7 +57,7 @@
         одновременно проверять размеры в этих выражениях. Например:
     </p>
     <img src="resources/pictureTagWithMediaAtribute.png" alt="withMediaAttribute" title="withMediaAttribute"
-         width="100%">
+         width="100%" height="304">
     <p>Этот код загружает уменьшенную альбомную (landscape) версию изображения для устройств
         с малым экраном и соответствующей ориентацией. И увеличенную версию того же изображения для устройств
         с большим экраном.</p>
@@ -68,7 +68,7 @@
         это можно сделать, указав дополнительные имена файлов в атрибуте srcset. Давайте к примеру посмотрим на
         наш первый кусок кода с добавлением обработки для Retina 2x дисплеев:</p>
     <img src="resources/pictureTagForDifferentDisplays.png" alt="DifferentDisplays" title="DifferentDisplays"
-         width="100%">
+         width="100%"height="228">
     <p>Т.к. сначала обрабатывается media query, вы можете управлять размерами изображения,
         с которыми оно будет показано на экране. Затем будет проверяться плотность пикселей:
         если дисплей поддерживает повышенную плотность и в пользовательских настройках есть на это разрешение
