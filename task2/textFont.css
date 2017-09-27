@@ -1,6 +1,6 @@
 div.main{
     width: 65%;
-    margin: 10%
+    margin: 5%
 }
 p{
     font-family: Roboto, Arial, sans-serif;
@@ -15,6 +15,22 @@ li{
     margin-bottom: 19px;
     color: #3a3a3a;
 
+}
+li.plus:before{
+    content: "+";
+    margin-right: 4px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 19px;
+    color: #3a3a3a;
+}
+li.minus:before{
+    content: "-";
+    margin-right: 4px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 19px;
+    color: #3a3a3a;
 }
 code{
     border: solid 1px #e4e4e4;
