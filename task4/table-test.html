@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DifficultTable</title>
+</head>
+<body>
+<h2>Пример сложной таблицы</h2>
+<style>
+    table td {
+        border: 2px solid blue;
+        padding: 5px;
+    }
+
+    table th {
+        border: none;
+        padding: 5px;
+        border-bottom: 1px;
+    }
+
+    table {
+        border: 1px solid blue;
+    }
+</style>
+<table style="border-collapse: collapse;">
+    <tr bgcolor="#888888" style="color: #ffffff;">
+        <th style="width: 100px;">Название 1</th>
+        <th style="width: 100px;">Название 2</th>
+        <th style="width: 100px;">Еще название</th>
+        <th style="width: 170px;">Куча елементво</th>
+        <th style="width: 100px;">Список 1</th>
+        <th style="width: 100px;">Список 2</th>
+    </tr>
+    <tr>
+        <td rowspan="11" align="center">JPMC</td>
+        <td rowspan="5">CST</td>
+        <td rowspan="3">CT</td>
+        <td>ADS</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>BTO</td>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>CSI</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td rowspan="2">VCT</td>
+        <td>ADS</td>
+        <td>4</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>BTO</td>
+        <td>5</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td colspan="3" align="right">Sub total</td>
+        <td>6</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td rowspan="4">CST</td>
+        <td rowspan="3">CT</td>
+        <td>ADS</td>
+        <td>7</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>BTO</td>
+        <td>8</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>CSI</td>
+        <td>9</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>VCT</td>
+        <td>ADS</td>
+        <td>10</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td colspan="3" align="right">Sub total</td>
+        <td>11</td>
+        <td>11</td>
+    </tr>
+</table>
+
+</body>
+</html>
