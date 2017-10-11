@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background</title>
+</head>
+<body>
+<style>
+    div {
+        background: url("resources/BeCrueltyFree_250x250.jpg") no-repeat white;
+        border: 1px solid #0086b3;
+        height: 250px;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        width: 65%;
+        margin: 50px auto;
+    }
+
+    div.bgAuto {
+        /*
+        Значение по умолчанию
+        Размеры фоновой картинки остаются исходными
+        */
+        background-size: auto;
+
+    }
+
+    div.s100px {
+        /*Поскольку указано только одно значение,то оно автоматически считается шириной. Высота устанавливается как auto*/
+        background-size: 100px;
+
+    }
+
+    div.s100-250px {
+        /*Здесь непосредственно задается ширина и высота*/
+        background-size: 100px 250px;
+
+    }
+
+    div.contain {
+        /*При этом свойстве изображение будет уменьшаться и увеличиваться, чтобы но заплняло контэйнер
+          Но ширина и высота не будут превышать размеры div*/
+        background-size: contain;
+
+    }
+
+    div.cover {
+        /*
+        Изображение масштабируется, чтобы заполнить весь контэйнер ,
+        но если различаются соотношения сторон, то картинка будет обрезана
+        */
+        background-size: cover;
+
+    }
+
+    div.few {
+        /*
+        Вставляются три картинки фона
+        Процентами задаем позицию вставки относительно ширины и высоты родителя
+        в последней строке указывается размеры изображений
+         */
+        background: url("resources/BeCrueltyFree_250x250.jpg") 80% 90% no-repeat,
+        url("resources/BeCrueltyFree_250x250.jpg") 40% 50% no-repeat,
+        url("resources/BeCrueltyFree_250x250.jpg") 10% 30% no-repeat;
+        background-size: 150px 200px, 120px;
+    }
+</style>
+<h1 align="center">background-size Examples</h1>
+<h2 align="center">background-size: auto</h2>
+<div class="bgAuto"></div>
+<h2 align="center">background-size: contain</h2>
+<div class="contain"></div>
+<h2 align="center">background-size: 100px</h2>
+<div class="s100px"></div>
+<h2 align="center">background-size: 100px 250px</h2>
+<div class="s100-250px"></div>
+<h2 align="center">background-size: cover</h2>
+<div class="cover"></div>
+<h2 align="center">background-size: 150px 200px, auto, 150px</h2>
+<div class="few"></div>
+
+</body>
+</html>
