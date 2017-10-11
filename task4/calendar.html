@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+</head>
+<body style="background-color: #445566">
+<style>
+    table td {
+        background-color: #eeeeee;
+        padding: 5px;
+        width: 38px;
+        height: 38px;
+        text-align: center;
+        border: 1px solid rgba(130, 130, 130, 0.34);
+        color: #7f7f7f;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid white;
+        border-collapse: collapse;
+
+    }
+    table td.vacation{
+        background-color: #787878;
+        color: white;
+        border: 1px solid white;
+
+    }
+    table td.previousMonth{
+        background-color: #ffffff;
+        color: lightgray;
+    }
+</style>
+<table>
+    <tr style="background-color: red">
+        <td colspan="7" style="text-align: center;color: white;background-color: #ee3333;border-color: white">МАЙ</td>
+    </tr>
+    <tr>
+        <td class="previousMonth">30</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td class="vacation">5</td>
+        <td class="vacation">6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td style="background-color: #ee3333;color: white;">9</td>
+        <td>10</td>
+        <td>11</td>
+        <td class="vacation">12</td>
+        <td class="vacation">13</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td class="vacation">19</td>
+        <td class="vacation">20</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td class="vacation">26</td>
+        <td class="vacation">27</td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+        <td class="previousMonth">1</td>
+        <td class="previousMonth">2</td>
+        <td class="previousMonth">3</td>
+    </tr>
+</table>
+</body>
+</html>
