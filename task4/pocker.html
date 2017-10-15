@@ -6,70 +6,172 @@
 </head>
 <body>
 <style>
+    body {
+        background-color: deepskyblue;
+        margin: 3px
+    }
 
-    #topLeft {
+    .text {
+        width: 85%;
+        padding-left: 5px;
+    }
+
+    .cards {
+        border: 2px solid green;
+        padding: 20px;
+    }
+
+    .card {
+        background: url('resources/cards2.png');
+        width: 140px;
+        height: 190px;
+        display: inline-block;
+    }
+
+    .first-card {
+        background-position-x: 0%;
+        background-position-y: 92.5%;
+    }
+
+    .second-card {
+        background-position-x: 33%;
+        background-position-y: 84.7%;
+    }
+
+    .third-card {
+        background-position-x: 66.1%;
+        background-position-y: 77%;
+    }
+
+    .fourth-card {
+        background-position-x: 66.1%;
+        background-position-y: 69.3%;
+    }
+
+    .fifth-card {
+        background-position-x: 34.1%;
+        background-position-y: 61.6%;
+    }
+
+    .frame {
+        background-color: white;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        right: 4px;
+        bottom: 4px;
+        height: 91%;
+    }
+
+    .topLeft {
+        margin-left: -98px;
         width: auto;
         height: 104px;
         background: url("resources/topLeft1.png") no-repeat left top;
     }
 
-    #topRight {
+    .topRight {
+        margin-top: -39px;
+        margin-right: 4px;
         width: auto;
         height: 104px;
         background: url("resources/topRight1.png") no-repeat right top;
     }
 
-    #topHorizont {
-
+    .topHorizont {
         margin-left: 101px;
         width: auto;
         height: 39px;
-        background: url('resources/line.png') repeat-x;
+        background: url('resources/line.png') repeat-x top left;
     }
 
-    #bottomHorizont {
-        margin-left: 101px;
-        padding-top: 67px;
+    .bottomHorizont {
+        margin-left: 99px;
+        /* margin-top: -100px;*/
         width: auto;
-        height: 37px;
-        background: url('resources/line.png') repeat-x 0% 100%;
+        height: 105px;
+        background: url('resources/line.png') repeat-x;
+        background-position-x: left;
+        background-position-y: bottom;
     }
 
-    #lineRightVertical {
-        margin-top: 100px;
-        width: 40px;
-        height: auto;
+    .lineRightVertical {
+        padding-bottom: 520px;
+        height: 39px;
         background: url('resources/line1.png') repeat-y right top;
     }
 
-    #lineVerticalLeft {
-        width: 40px;
-        height: auto;
-        background: url('resources/line1.png') repeat;
+    .lineVerticalLeft {
+        /* padding: 200px; */
+        height: 40px;
+        background: url('resources/line1.png');
+        background-repeat: repeat-y;
+        padding-bottom: 520px;
     }
 
-    #bottomLeft {
+    .bottomLeft {
         width: auto;
         height: 104px;
         background: url('resources/bottomLeft1.png') no-repeat left bottom;
+        margin-left: 1.5px;
     }
 
-    #bottomRight {
+    .bottomRight {
+        margin-right: 2.5px;
         width: auto;
         height: 104px;
-        background: url("resources/bottomRight1.png") no-repeat right bottom;
+
+        background: url("resources/bottomRight1.png") no-repeat 100% 100%;
     }
 
+
 </style>
-<div>
-<div id="topLeft">
-    <div id="topHorizont">
-        <div id="topRight">
+<div class="frame">
+    <div class="lineVerticalLeft">
+        <div class="topHorizont">
+            <div class="topLeft"></div>
+            <div class="text">
+                <h1>Покер</h1>
+
+                <p><strong>По́кер</strong> (англ. poker) — карточная игра, цель которой — выиграть ставки, собрав как
+                    можно более
+                    высокую
+                    покерную комбинацию, используя 4 (старый классический вариант), или 5 карт, или вынудив всех
+                    соперников
+                    прекратить участвовать в игре. Игра идёт с полностью или частично закрытыми картами. Конкретные
+                    правила
+                    могут варьироваться в зависимости от разновидности покера. Обобщающими элементами всех
+                    разновидностей
+                    покера являются комбинации и наличие торговли в процессе игры.
+                <p>
+
+                <p>Ввиду того, что игрок не знает карты своих противников, покер является игрой с неполной информацией,
+                    как и многие другие карточные игры, в отличие от, например, шахмат, в которых оба игрока видят
+                    положение всех фигур на доске.
+                <p></p>
+
+                <h3>Комбинация в покере — стрит</h3>
+                <div class="cards">
+                    <div class="card first-card"></div>
+                    <div class="card second-card"></div>
+                    <div class="card third-card"></div>
+                    <div class="card fourth-card"></div>
+                    <div class="card fifth-card"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lineRightVertical">
+            <div class="topRight"></div>
+        </div>
+        <div class="bottomLeft">
+            <div class="bottomHorizont">
+                <div class="bottomRight"></div>
+            </div>
+
 
         </div>
+
     </div>
-
-
 
 </div>
 </body>
