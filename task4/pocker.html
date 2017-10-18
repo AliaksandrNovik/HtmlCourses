@@ -12,7 +12,12 @@
     }
 
     .text {
-        width: 85%;
+        border-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        width: 500px;
+        height: auto;
         padding-left: 5px;
     }
 
@@ -64,76 +69,80 @@
     }
 
     .topLeft {
-        margin-left: -98px;
+        /* margin-top: 40px;*/
         width: auto;
-        height: 104px;
-        background: url("resources/topLeft1.png") no-repeat left top;
+        /*  height: 104px;*/
+        background: url("resources/topLeftNew.png") no-repeat left top;
     }
 
     .topRight {
-        margin-top: -39px;
-        margin-right: 4px;
+        /* margin-top: -39px; */
+        /* margin-right: 4px; */
         width: auto;
-        height: 104px;
-        background: url("resources/topRight1.png") no-repeat right top;
+        height: 96px;
+        background: url('resources/rightTop.png') no-repeat right top;
     }
 
     .topHorizont {
-        margin-left: 101px;
+        margin-left: 94px;
         width: auto;
-        height: 39px;
-        background: url('resources/line.png') repeat-x top left;
+        /* height: 39px; */
+        background: url('resources/bottomHorizont.png') repeat-x top left;
     }
 
     .bottomHorizont {
-        margin-left: 99px;
-        /* margin-top: -100px;*/
+        margin-right: 92.5px;
+
         width: auto;
-        height: 105px;
-        background: url('resources/line.png') repeat-x;
+        height: 104px;
+        background: url(resources/bottomHorizont.png) repeat-x;
         background-position-x: left;
         background-position-y: bottom;
     }
 
     .lineRightVertical {
-        padding-bottom: 520px;
-        height: 39px;
-        background: url('resources/line1.png') repeat-y right top;
+        margin-top: -23px;
+        /* height: 42px; */
+        background: url('resources/verticalLine.png') repeat-y right
     }
 
     .lineVerticalLeft {
+        margin-top: 64px;
         /* padding: 200px; */
         height: 40px;
-        background: url('resources/line1.png');
+        background: url('resources/verticalLine.png');
         background-repeat: repeat-y;
-        padding-bottom: 520px;
+        padding-bottom: 600px;
     }
 
     .bottomLeft {
+        margin-left: -92px;
         width: auto;
         height: 104px;
-        background: url('resources/bottomLeft1.png') no-repeat left bottom;
-        margin-left: 1.5px;
+        background: url('resources/bottomLeft.png') no-repeat left bottom;
+        /* margin-left: 1.5px; */
     }
 
     .bottomRight {
-        margin-right: 2.5px;
+        margin-top: -20px;
         width: auto;
         height: 104px;
 
-        background: url("resources/bottomRight1.png") no-repeat 100% 100%;
+        background: url("resources/bottomRight.png") no-repeat 100% 100%;
     }
 
 
 </style>
-<div class="frame">
-    <div class="lineVerticalLeft">
-        <div class="topHorizont">
-            <div class="topLeft"></div>
+<div class="topLeft">
+    <div class="topHorizont">
+        <div class="topRight"></div>
+        <div class="lineRightVertical">
             <div class="text">
+
                 <h1>Покер</h1>
 
-                <p><strong>По́кер</strong> (англ. poker) — карточная игра, цель которой — выиграть ставки, собрав как
+                <p><strong>По́кер</strong> (англ. poker) — карточная игра, цель которой — выиграть ставки, собрав
+                    как
                     можно более
                     высокую
                     покерную комбинацию, используя 4 (старый классический вариант), или 5 карт, или вынудив всех
@@ -145,7 +154,8 @@
                     покера являются комбинации и наличие торговли в процессе игры.
                 <p>
 
-                <p>Ввиду того, что игрок не знает карты своих противников, покер является игрой с неполной информацией,
+                <p>Ввиду того, что игрок не знает карты своих противников, покер является игрой с неполной
+                    информацией,
                     как и многие другие карточные игры, в отличие от, например, шахмат, в которых оба игрока видят
                     положение всех фигур на доске.
                 <p></p>
@@ -159,20 +169,16 @@
                     <div class="card fifth-card"></div>
                 </div>
             </div>
-        </div>
-        <div class="lineRightVertical">
-            <div class="topRight"></div>
-        </div>
-        <div class="bottomLeft">
-            <div class="bottomHorizont">
-                <div class="bottomRight"></div>
+
+            <div class="bottomRight">
+                <div class="bottomHorizont">
+                    <div class="bottomLeft">
+
+                    </div>
+                </div>
             </div>
-
-
         </div>
-
     </div>
-
 </div>
 </body>
 </html>

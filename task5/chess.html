@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: cyan;
+        }
+
+        div.frame {
+            background-color: white;
+            width: 455px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+        }
+
+        table.new-chess {
+            margin-right: auto;
+            margin-left: auto;
+            border-collapse: collapse;
+
+        }
+
+        table.new-chess td {
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
+            width: 48px;
+            height: 48px;
+
+        }
+
+        table.new-chess td.black {
+            background: url("resources/chess.png") no-repeat top;
+        }
+
+        table.new-chess td.white {
+            background: url("resources/chess.png") no-repeat bottom;
+        }
+
+        table.new-chess td.rook {
+            background-position-x: 40%;
+        }
+
+        table.new-chess td.horse {
+            background-position-x: 80%;
+        }
+
+        table.new-chess td.elephant {
+            background-position-x: 60%;
+        }
+
+        table.new-chess td.king {
+            background-position-x: 20%;
+        }
+
+        table.new-chess td.queen {
+            background-position-x: 0%;
+        }
+
+        table.new-chess td.pawn {
+            background-position-x: 100%;
+        }
+
+        table tr:nth-child(odd) td:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        table tr:nth-child(even) td:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        table.new-chess tr:first-child td {
+            height: 20px;
+            background-color: white;
+        }
+
+        table.new-chess tr:last-child td {
+            height: 20px;
+            background-color: white;
+        }
+
+        table.new-chess.new-chess td:first-child {
+            width: 20px;
+            background-color: white;
+        }
+
+        table.new-chess.new-chess td:last-child {
+            width: 20px;
+            background-color: white;
+        }
+
+        table.new-chess tr:first-child{
+            border-bottom: 2px solid black;
+        }
+
+        table.new-chess tr:last-child{
+            border-top: 2px solid black;
+        }
+        table.new-chess td:first-child{
+            border-right: 2px solid black;
+        }
+
+        table.new-chess td:last-child{
+            border-left: 2px solid black;
+        }
+
+        table.new-chess td.without{
+            border: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<h2 align="center">Шахматы</h2>
+<div class="frame">
+    <table class='new-chess'>
+        <tr>
+            <td class="without"></td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+            <td class="without"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td class="black rook"></td>
+            <td class="black horse"></td>
+            <td class="black elephant"></td>
+            <td class="black king"></td>
+            <td class="black queen"></td>
+            <td class="black elephant"></td>
+            <td class="black horse"></td>
+            <td class="black rook"></td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="white rook"></td>
+            <td class="white horse"></td>
+            <td class="white elephant"></td>
+            <td class="white king"></td>
+            <td class="white queen"></td>
+            <td class="white elephant"></td>
+            <td class="white horse"></td>
+            <td class="white rook"></td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td class="without"></td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+            <td class="without"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
