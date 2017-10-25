@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blocks-div</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        table {
+            border: none;
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+        }
+
+        div.header {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        div.header a {
+            font-size: 25px;
+            color: blue;
+        }
+
+        div.wrapper {
+
+            background-color: yellow;
+            min-height: 100%;
+            position: relative;
+        }
+
+        div.sidebar {
+            width: 100%;
+            height: 100%;
+            float: left;
+            display: inline-block;
+            padding: 10px;
+            background-color: yellow;
+        }
+
+        div.content {
+            background: url("resources/soccer40.png") repeat-y top right;
+            background-size: 50px 50px;
+            background-color: white;
+            padding: 5px 30px;
+        }
+
+        .content__image {
+            margin-right: 20px;
+            margin-bottom: 10px;
+            float: left;
+        }
+
+        .footer {
+            line-height: 47px;
+            position: static;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            background-color: lightblue;
+            text-align: center;
+            font-size: 25px;
+            color: blue;
+        }
+
+        .clearfix {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+
+        .ball {
+            float: right;
+            width: 256px;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0">
+    <tr>
+        <td colspan="2">
+            <div class="header"><a>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</a></div>
+        </td>
+    </tr>
+    <tr>
+        <td width="250px">
+            <div class="sidebar">
+                <h3>Виды спорта</h3>
+                <ul>
+                    <li><a href="resources/bear5.jpeg"> конькобежный спорт</a></li>
+                    <li><a href="resources/bear5.jpeg"> конькобежный спорт</a></li>
+                    <li><a href="resources/bear5.jpeg"> конькобежный спорт</a></li>
+                    <li><a href="resources/bear5.jpeg"> конькобежный спорт</a></li>
+                    <li><a href="resources/bear5.jpeg"> конькобежный спорт</a></li>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <div class="content">
+
+                <h2 align="center">ФУТБОЛ</h2>
+
+                <img class="content__image" src="resources/bear5.jpeg" alt="footbal" title="footbal" height="150px"
+                     width="230px">
+                <p> После избрания Жюля Риме президентом ФИФА в 1921 году было ратифицировано предложение считать
+                    последующие
+                    Олимпийские футбольные турниры «чемпионатами мира по футболу среди любителей». Эти турниры — 1924 и
+                    1928
+                    годов —
+                    выиграла сборная Уругвая. Благодаря этим успехам у Ассоциации футбола Уругвая не было конкурентов
+                    в борьбе за организацию первого в истории Кубка мира ФИФА (более известного в русском языке просто
+                    как чемпионат мира по футболу), который прошёл в 1930 году. Уругвайцы стали победителем домашнего
+                    первенства,
+                    трёхкратными чемпионами мира по футболу и первыми обладателями Кубка мира ФИФА. Это стало началом
+                    новой
+                    эры
+                    в истории футбола[30]. До 1970 года этот трофей носил имя Жюля Риме, также был известен как «Кубок
+                    богини
+                    Нике»,
+                    но после третьей победы сборной Бразилии на чемпионате мира был отдан ей на вечное хранение. Вместо
+                    него
+                    стал разыгрываться современный Кубок мира.
+                </p>
+                <p>
+                    Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.
+                    Эти
+                    правила
+                    предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп,
+                    как
+                    юниоры,
+                    взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто
+                    формулировались в
+                    общих
+                    чертах, которые позволяют упростить их применения в зависимости от характера игры. Правила игры
+                    публикуются
+                    в
+                    ФИФА, но поддерживаются Международным советом футбольных ассоциаций (IFAB).
+
+                    Каждая команда состоит максимум из одиннадцати игроков (без учета запасных), один из которых должен
+                    быть вратарём. Правила неофициальных соревнований могут уменьшить количество игроков, максимум до 7.
+                    Вратари являются единственными игроками, которым позволено играть руками при условии: они делают это
+                    в
+                    пределах штрафной площади у своих собственных ворот. Хотя есть различные позиции на поле, эти
+                    позиции
+                    не обязательны[32].
+
+                    Отдельная футбольная игра называется матч, который в свою очередь состоит из двух таймов по 45
+                    минут.
+                    Пауза между первым и вторым таймами составляет 15 минут, в течение которой команды отдыхают, а по её
+                    окончании меняются воротами[33].
+                </p>
+
+            </div>
+            <div class="ball"></div>
+        </td>
+    </tr>
+    <tr><td colspan="2"><div class="footer">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div></td></tr>
+</table>
+</body>
+</html>
