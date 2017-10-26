@@ -5,19 +5,18 @@
     <title>Slider</title>
     <style>
         html, body {
-            width: 100%;
             height: 100%;
             background-color: black;
         }
 
         .slider {
-            height: 60%;
+            height: 100%;
             width: 80%;
             margin: 200px auto;
         }
 
         .img-bg {
-            background: url("resources/slider/slider-img-01.jpg") no-repeat center left;
+            background: url("resources/slider/slider-img-01.jpg") no-repeat center top;
             height: 100%;
             width: 100%;
         }
@@ -47,9 +46,9 @@
         }
 
         .txt-div {
+            font-family: 'Open Sans', sans-serif;
             position: absolute;
             left: 13%;
-            top: 34%;
             display: inline-block;
             width: 50%;
             z-index: 2;
@@ -64,15 +63,16 @@
         }
 
         .pages {
+            display: inline-block;
             position: absolute;
-            top: 80%;
-            left: 40%;
+            bottom: -144%;
+            left: 27%;
         }
 
         li a {
             margin-left: 10px;
             line-height: 30px;
-            font-family: 'Open Sans', sans-serif;;
+            font-family: 'Open Sans', sans-serif;
             text-align: center;
             vertical-align: middle;
             background-color: white;
@@ -92,7 +92,7 @@
         }
 
         div ul {
-            width: auto%;
+            width: auto;
             margin-left: auto;
             margin-right: auto;
         }
@@ -108,17 +108,18 @@
             <a>КОМФОРТНАЯ ОДЕЖДА</a>
             <hr>
             <br><a>для всех видов спорта</a>
+            <div class="pages">
+                <ul>
+                    <li><a href="../task4/calendar.html" target="_blank"></a></li>
+                    <li><a href="../task4/calendar.html" target="_blank"></a></li>
+                    <li><a href="../task4/calendar.html" target="_blank"></a></li>
+                    <li><a href="../task4/calendar.html" target="_blank"></a></li>
+                </ul>
+            </div>
         </div>
         <button class="right-button"><a></a>
         </button>
-        <div class="pages">
-            <ul>
-                <li><a href="../task4/calendar.html" target="_blank"></a></li>
-                <li><a href="../task4/calendar.html" target="_blank"></a></li>
-                <li><a href="../task4/calendar.html" target="_blank"></a></li>
-                <li><a href="../task4/calendar.html" target="_blank"></a></li>
-            </ul>
-        </div>
+
     </div>
 </div>
 </div>
