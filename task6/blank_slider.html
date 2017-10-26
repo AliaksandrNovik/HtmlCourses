@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+
+        .slider {
+            height: 60%;
+            width: 80%;
+            margin: 200px auto;
+        }
+
+        .img-bg {
+            background: url("resources/slider/slider-img-01.jpg") no-repeat center left;
+            height: 100%;
+            width: 100%;
+        }
+
+        .left-button {
+            float: left;
+            display: inline-block;
+            background: url("resources/slider/prev-next-sprite.png") no-repeat center left;
+            height: 50px;
+            width: 50px;
+            margin-top: 170px;
+            margin-left: 20px;
+            background-position-x: -49%;
+            border: hidden;
+        }
+
+        .right-button {
+            float: right;
+            display: inline-block;
+            background: url("resources/slider/prev-next-sprite.png") no-repeat center left;
+            height: 50px;
+            width: 50px;
+            margin-right: 20px;
+            margin-top: 170px;
+            background-position-x: 146%;
+            border: hidden;
+        }
+
+        .txt-div {
+            position: absolute;
+            left: 13%;
+            top: 34%;
+            display: inline-block;
+            width: 50%;
+            z-index: 2;
+            color: white;
+            margin: 100px 120px;
+            font-size: 25px;
+            line-height: 20px;
+        }
+
+        .txt-div hr {
+            font-weight: bold;
+        }
+
+        .pages {
+            position: absolute;
+            top: 80%;
+            left: 40%;
+        }
+
+        li a {
+            margin-left: 10px;
+            line-height: 30px;
+            font-family: 'Open Sans', sans-serif;;
+            text-align: center;
+            vertical-align: middle;
+            background-color: white;
+            color: whitesmoke;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a:hover {
+            background-color: #FF6600;
+        }
+
+        div ul {
+            width: auto%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slider">
+    <div class="img-bg">
+        <button class="left-button"><a></a></button>
+        <div align="center" class="txt-div">
+            <hr>
+            <a>КОМФОРТНАЯ ОДЕЖДА</a>
+            <hr>
+            <br><a>для всех видов спорта</a>
+        </div>
+        <button class="right-button"><a></a>
+        </button>
+        <div class="pages">
+            <ul>
+                <li><a href="../task4/calendar.html" target="_blank"></a></li>
+                <li><a href="../task4/calendar.html" target="_blank"></a></li>
+                <li><a href="../task4/calendar.html" target="_blank"></a></li>
+                <li><a href="../task4/calendar.html" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
