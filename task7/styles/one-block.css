@@ -1,0 +1,54 @@
+html,body{
+    margin: 0px;
+    background-color: cyan;
+}
+.one-block{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    margin: 50px auto;
+}
+
+@media (max-width: 1280px){
+    .one-block{
+        background-color: red;
+    }
+}
+@media (max-width: 1024px){
+    .one-block{
+        border-radius:40px ;
+    }
+}
+
+@media (max-width: 768px){
+    .one-block{
+        border-radius: 40px;
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 640px){
+    .one-block{
+
+        border: 2px solid red;
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 480px){
+    .one-block{
+        border-radius: 100%;
+        border: 2px solid red;
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 320px) {
+    .one-block {
+        border-radius: 0px;
+        border: none;
+        margin: 0px;
+        width: auto;
+        background-color: yellow;
+    }
+}

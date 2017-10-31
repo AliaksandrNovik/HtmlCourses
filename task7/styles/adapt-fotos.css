@@ -1,0 +1,49 @@
+html, body {
+    width: 100%;
+}
+
+.image-block {
+    text-align: center;
+}
+
+.image {
+    margin: 5px 10px;
+    display: inline-block;
+    width: 320px;
+    height: auto;
+}
+
+@media  (min-width: 1372px){
+    .image{
+        width: 400px;
+    }
+}
+
+@media  (min-width: 981px){
+    .image{
+        width: 300px;
+        max-width: 1200px;
+        min-width: 320px;
+    }
+}
+
+@media (max-width: 980px){
+    .image{
+        width: 236px;
+        margin: 2px 5px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .image{
+        width: 240px;
+        margin: 0px 1px;
+    }
+}
+
+@media (max-width: 480px){
+    .image{
+        width: 390px;
+    }
+}
