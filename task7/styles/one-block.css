@@ -29,7 +29,8 @@ html,body{
 
 @media (max-width: 640px){
     .one-block{
-
+        width: 350px;
+        height: 350px;
         border: 2px solid red;
         background-color: yellow;
     }
@@ -37,6 +38,8 @@ html,body{
 
 @media (max-width: 480px){
     .one-block{
+        width: 300px;
+        height: 300px;
         border-radius: 100%;
         border: 2px solid red;
         background-color: yellow;
