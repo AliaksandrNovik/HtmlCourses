@@ -5,6 +5,7 @@ html, body {
 }
 
 .header {
+
     height: auto;
     margin: 0px auto;
     text-align: center;
@@ -23,7 +24,8 @@ html, body {
     width: 85%;
     padding-bottom: 50px;
 }
-.text-header {
+.text-header{
+font-family: 'Titillium Web', sans-serif;
     position: absolute;
     left: 0px;
     width: 100%;
