@@ -25,28 +25,34 @@
 
         div.wrapper {
 
-            background-color: yellow;
-            min-height: 100%;
+            min-height: 250px;
             position: relative;
         }
 
         div.sidebar {
-
+            box-sizing: border-box;
+            min-width: 250px;
+            position: absolute;
             float: left;
+            background:url("resources/yellow-line.png") repeat-y;
             display: inline-block;
-            padding: 10px;
+            padding: 0px 10px;
             max-width: 250px;
-            background-color: yellow;
+            min-height: 300px;
+            height: 100%;
         }
 
         div.content {
             background: url("resources/soccer40.png") repeat-y top right;
             background-size: 50px 50px;
-            background-color: white;
             width: calc(100% - 250px);
-            float: right;
             display: inline-block;
-            padding: 5px 20px;
+            margin-left: 250px;
+            min-height: 300px;
+            padding-top:5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 0px;
         }
 
         .content__image {
@@ -68,21 +74,6 @@
             color: blue;
         }
 
-        .clearfix {
-            visibility: hidden;
-            display: block;
-            font-size: 0;
-            content: " ";
-            clear: both;
-            height: 0;
-        }
-
-        .ball {
-            float: right;
-            width: 256px;
-            display: inline-block;
-
-        }
     </style>
 </head>
 <body>
@@ -142,11 +133,7 @@
             Пауза между первым и вторым таймами составляет 15 минут, в течение которой команды отдыхают, а по её
             окончании меняются воротами[33].
         </p>
-
     </div>
-    <div class="ball"></div>
-    <div class="clearfix"></div>
-
 </div>
 <div class="footer">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
 </body>

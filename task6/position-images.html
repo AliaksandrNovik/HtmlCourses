@@ -9,6 +9,7 @@
         }
 
         .images {
+            min-height: 459px;
             width: 399px;
             position: relative;
             margin-left: auto;
@@ -33,18 +34,25 @@
             z-index: 2;
         }
         .ads{
-            font-size: 19px;
-            padding: 30px;
+            padding: 33px;
+            text-align: center;
+            font-size: 28px;
             position: fixed;
-            top:10%;
-            right:20px;
-            width: 200px;
+            top: 10%;
+            right: 20px;
+            min-width: 200px;
+            max-width: 200px;
             background-color: yellow;
+            color: mediumblue;
         }
         .back-to_top{
-            position: absolute;
-            top:400px;
-            left:170px;
+            position: fixed;
+            bottom: 20px;
+            width: 41px;
+            height: 41px;
+            left: 50%; /* position the left edge of the element at the middle of the parent */
+            transform: translateX(-50%);
+            background: url("resources/to-top.png");
         }
     </style>
 </head>
@@ -98,8 +106,9 @@
     <div class="men"><img src="resources/Man-and-woman.png"> </div>
     <div class="yin"><img src="resources/Yin_and_Yang.png"> </div>
     <div class="smoking"><img src="resources/No_smoking.png"> </div>
-    <div class="back-to_top"><a href="#top"><img src="resources/to-top.png"></a></div>
+
 </div>
 <div class="ads">Здeсь могла быть Ваша реклама!!!</div>
+<div class="back-to_top"><a style="display: block;height: 41px" href="#top"></a></div>
 </body>
 </html>
