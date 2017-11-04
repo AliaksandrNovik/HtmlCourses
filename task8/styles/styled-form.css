@@ -1,0 +1,150 @@
+body {
+    background-color: #7f7f7f;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 650px;
+    height: 50px;
+    background-color: #397FBB;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.header-title {
+    font-weight: normal;
+    color: white;
+    font-size: 20px;
+}
+
+form {
+    position: relative;
+    margin-top: 34px;
+    height: auto;
+    width: 650px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid dodgerblue;
+}
+
+div.form-group.name {
+    margin-top: 80px;
+}
+
+label {
+    display: block;
+    vertical-align: baseline;
+    width: 125px;
+    break-after: auto;
+    margin-bottom: 4px;
+}
+
+input, textarea {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightskyblue;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+}
+
+.placeholder-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.placeholder-wrap .placeholder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    margin-top: -.55em;
+    line-height: 1em;
+    z-index: 9;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+span.placeholder.area {
+    position: absolute;
+    top: 32%;
+
+}
+
+.placeholder-wrap input {
+    background-color: transparent;
+    border: 1px solid lightskyblue;
+    position: relative;
+    z-index: 10;
+}
+
+i.fa {
+    font-size: 13px;
+    color: #397FBB;
+}
+
+a {
+    font-weight: inherit;
+    color: lightgray;
+    font-size: 12px;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+}
+
+.placeholder-wrap input:focus + .placeholder {
+}
+
+.placeholder-wrap input:active + .placeholder {
+    visibility: hidden;
+
+}
+
+.placeholder-wrap input:focus {
+    border: 2px solid #397FBB;
+
+}
+
+fieldset {
+    border: none;
+
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+textarea {
+    min-width: 600px;
+    min-height: 100px;
+    max-width: 620px;
+    max-height: 150px;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    color: #397FBB;
+
+}
+
+.button-sbmt {
+    text-align: center;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+button[type='submit'] {
+    border-radius: 6px;
+    border: none;
+    background-color: #397FBB;
+    font-size: 16px;
+    height: 33px;
+    width: 250px;
+    color: white;
+    margin-bottom: 30px;
+}
