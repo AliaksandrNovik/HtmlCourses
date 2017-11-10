@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            background: url("images/paper.jpg") no-repeat center;
+        }
+
+        .note {
+            position: relative;
+            width: 600px;
+            height: 350px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            -webkit-box-shadow: -1px 9px 19px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow: -1px 9px 19px -4px rgba(0,0,0,0.75);
+            box-shadow: -1px 9px 19px -4px rgba(0,0,0,0.75);
+        }
+
+        .scotch {
+            position: absolute;
+            opacity: 0.4;
+            top:-24px;
+            width: 500px;
+            height: 50px;
+            background-color: #7f7f7f;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        .title {
+            padding-top: 40px;
+            text-align: center;
+            height: 50px;
+
+        }
+
+        .form {
+            margin-top: 20px;
+            width: 500px;
+            height: 200px;
+            background-color: #FF7E68;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        }
+
+        input {
+
+            display: block;
+        }
+
+        .log-pass-submit {
+            padding-left: 44px;
+            position: relative;
+            padding-top: 29px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        #login {
+            border: none;
+            margin-right: auto;
+            margin-left: auto;
+            width: 370px;
+            height: 50px;
+            margin-bottom: 10px;
+            border-radius:  10px 10px 0px 0px;
+        }
+
+        #password {
+            border: none;
+            margin-right: auto;
+            margin-left: auto;
+            width: 370px;
+            height: 50px;
+            border-radius:  0px 0px 10px 10px;
+        }
+
+        .submit {
+            box-sizing: border-box;
+            position: absolute;
+            right:35px;
+            top: 43px;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background: #FF5335;
+            border: 7px solid #FF7E68;
+        }
+
+        .submit:focus{
+            height: 100px;
+            width: 100px;
+        }
+
+        .submit:active{
+            height: 95px;
+            width: 95px;
+            background-color: blue;
+            box-shadow: 0px 7px 5px 0px rgba(61,51,61,0.63);
+        }
+
+        .fa-long-arrow-right {
+            font-size: 35px;
+            color: white;
+        }
+
+        .title p {
+            border-bottom: 1px solid #000;
+            line-height: 0.1em;
+        }
+
+        .horizontal-line-inline {
+            padding: 25px;
+            display: inline-block;
+            font-size: 12px;
+            width: 60px;
+        }
+
+        .title-text {
+            font-family: 'Playfair Display', serif;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+        input:placeholder-shown {
+            padding-left: 12px;
+            font-size: larger;
+            background-color: #FFD5CE;
+        }
+        .forgot-pass{
+            padding-right: 70px;
+            text-align: right;
+            font-size: 22px;
+            color: darkslategray;
+            padding-top: 4px;
+        }
+        hr{
+            border: none;
+            height: 2px;
+            background-color: #333; /* Modern Browsers */
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="note">
+    <div class="scotch"></div>
+    <div class="title">
+        <div class="horizontal-line-inline"><hr></div>
+        <div class="title-text"><a>АВТОРИЗИРУЙТЕСЬ</a></div>
+        <div class="horizontal-line-inline"><hr></div>
+    </div>
+    <div class="form">
+        <div class="log-pass-submit">
+            <form>
+
+                <input type="text" class="login" id="login" placeholder="Логин" width="500px">
+                <input type="text" class="password" id="password" placeholder="Пароль" width="500px">
+                <button class="submit" type="submit"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                <div class="forgot-pass">
+                    <a>Забыли логин или пароль? <a style="color: blue">Напомним!</a></a></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

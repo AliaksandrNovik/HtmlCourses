@@ -5,7 +5,7 @@ body {
 .header {
     position: absolute;
     top: 0;
-    width: 650px;
+    width: 100%;
     height: 50px;
     background-color: #397FBB;
     color: white;
@@ -24,21 +24,30 @@ form {
     position: relative;
     margin-top: 34px;
     height: auto;
-    width: 650px;
+    width: 670px;
     background-color: white;
     margin-right: auto;
     margin-left: auto;
-    border: 2px solid dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+form.inline{
+    height: auto;
+    width: 721px;
 }
 
 div.form-group.name {
     margin-top: 80px;
 }
 
+div.form-group {
+    margin-left: 12px;
+}
+
 label {
-    display: block;
+    display: inline-block;
     vertical-align: baseline;
-    width: 125px;
+    width: 97px;
     break-after: auto;
     margin-bottom: 4px;
 }
@@ -47,7 +56,7 @@ input, textarea {
     display: block;
     position: relative;
     margin-bottom: 20px;
-    width: 600px;
+    width: 550px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid lightskyblue;
@@ -74,15 +83,8 @@ input, textarea {
 
 span.placeholder.area {
     position: absolute;
-    top: 32%;
+    top: 18%;
 
-}
-
-.placeholder-wrap input {
-    background-color: transparent;
-    border: 1px solid lightskyblue;
-    position: relative;
-    z-index: 10;
 }
 
 i.fa {
@@ -95,14 +97,6 @@ a {
     color: lightgray;
     font-size: 12px;
     font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
-}
-
-.placeholder-wrap input:focus + .placeholder {
-}
-
-.placeholder-wrap input:active + .placeholder {
-    visibility: hidden;
-
 }
 
 .placeholder-wrap input:focus {
@@ -121,7 +115,7 @@ legend {
 }
 
 textarea {
-    min-width: 600px;
+    min-width: 549px;
     min-height: 100px;
     max-width: 620px;
     max-height: 150px;
@@ -147,4 +141,19 @@ button[type='submit'] {
     width: 250px;
     color: white;
     margin-bottom: 30px;
+}
+
+input::-webkit-input-placeholder {
+    color: darkgray;
+}
+
+textarea::-webkit-input-placeholder {
+    color: darkgray;
+}
+
+
+input,textarea:placeholder-shown {
+    padding-left: 27px;
+    padding-top: 5px;
+    font-size: 13px;
 }
