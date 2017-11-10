@@ -117,7 +117,7 @@ legend {
 textarea {
     min-width: 549px;
     min-height: 100px;
-    max-width: 620px;
+    max-width: 549px;
     max-height: 150px;
     font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
     color: #397FBB;
