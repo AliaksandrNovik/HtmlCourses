@@ -1,0 +1,51 @@
+@keyframes lustra-red {
+    100% {
+    }
+    50% {
+        box-shadow: 13px 22px 300px 60px rgba(252, 8, 8, 1);
+    }
+    0% {
+    }
+
+}
+
+@keyframes lustra-blue {
+    100% {
+    }
+    50% {
+        box-shadow: 13px 22px 300px 60px rgba(28, 76, 219, 1);
+    }
+    0% {
+    }
+}
+
+.police {
+    position: relative;
+    top: 97px;
+    left: 27px;
+    width: 215px;
+    height: 382px;
+    background: url("../images/police.png") no-repeat;
+}
+
+.lustra-red {
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 138px;
+    left: 134px;
+    width: 32px;
+    height: 15px;
+        animation: lustra-red 2s infinite;
+}
+
+.lustra-blue {
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 138px;
+    left: 52px;
+    width: 32px;
+    height: 15px;
+    animation: lustra-blue 2s infinite;
+}

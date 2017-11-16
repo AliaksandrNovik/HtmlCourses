@@ -1,0 +1,107 @@
+
+@keyframes ball-rotate {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 150px);
+    }
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shadow-grow {
+    0%{
+
+    }
+    50%{
+        box-shadow: 10px 10px 71px 1px rgba(240,36,104,1);
+    }
+    100%{
+
+    }
+}
+
+.main-cont {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: 2px solid blueviolet;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+.circle {
+    position: relative;
+    top: 20px;
+    float: left;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #dd1144;
+}
+
+.transform {
+    position: absolute;
+    left: 600px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    opacity: 0.2;
+
+}
+
+.scale-block {
+    position: absolute;
+    left: 300px;
+    top: 60px;
+    width: 200px;
+    height: 100px;
+    background-color: palegreen;
+    opacity: 0.8;
+}
+
+.ball {
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.main-cont:hover .circle {
+    animation: shadow-grow 2s infinite linear;
+}
+
+.main-cont:hover .ball {
+    animation: ball-rotate 2s infinite;
+}
+
+.main-cont:hover .transform {
+    animation: rotate 8s linear infinite;
+}
+
+.main-cont:hover .scale-block {
+    animation: scale 6s infinite;
+}

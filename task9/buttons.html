@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+        .frame {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            border: 2px solid lightskyblue;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+        }
+
+        .frame:hover{
+            border: 4px solid mediumslateblue;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: 20px;
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+
+        button:focus {
+
+            border: 2px solid red;
+        }
+
+        button:hover {
+            box-shadow: 0px 7px 5px 0px rgba(61, 51, 61, 0.63);
+        }
+
+        .first {
+            left: 10px;
+            background: linear-gradient(135deg, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%);
+        }
+
+        .first:active {
+            width: 90px;
+            height: 40px;
+            border-radius: 2px;
+
+        }
+
+        .second {
+            position: absolute;
+            color: white;
+            font-size: larger;
+            text-shadow: white;
+            left: 200px;
+            width: 200px;
+            background: linear-gradient(135deg, #ff3019 0%, #cf0404 100%);
+        }
+
+        .third {
+            position: absolute;
+            top: 120px;
+            color: white;
+            font-size: larger;
+            text-shadow: blue;
+            left: 300px;
+            width: 200px;
+            background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+        }
+
+        .first:active {
+            width: 90px;
+            height: 45px;
+            top: 15px;
+            box-shadow: #6896ba;
+        }
+
+        .fourth {
+            position: absolute;
+            top: 100px;
+            font-size: larger;
+            text-shadow: blue;
+            left: 120px;
+            width: 150px;
+            border: none;
+            background: radial-gradient(ellipse at center, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+        }
+
+        .fifth {
+            position: absolute;
+            top: 180px;
+            font-size: larger;
+            text-shadow: blue;
+            left: 400px;
+            width: 150px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(to bottom, #fb83fa 0%, #e93cec 100%);
+        }
+
+        .last {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            width: 200px;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+<div class="frame">
+    <button class="first">Button first</button>
+    <button class="second">Button second</button>
+    <button class="third">Button third</button>
+    <button class="fourth">Button fourth</button>
+    <button class="fifth">Button fifth</button>
+    <button type="button" class="btn btn-primary btn-lg last">By bootstrap</button>
+</div>
+</body>
+</html>
