@@ -29,6 +29,14 @@
             position: relative;
         }
 
+        .wrapper:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
         div.sidebar {
             box-sizing: border-box;
             min-width: 250px;
@@ -38,7 +46,6 @@
             display: inline-block;
             padding: 0px 10px;
             max-width: 250px;
-            min-height: 300px;
             height: 100%;
         }
 
@@ -48,7 +55,6 @@
             width: calc(100% - 250px);
             display: inline-block;
             margin-left: 250px;
-            min-height: 300px;
             padding-top:5px;
             padding-bottom: 5px;
             padding-left: 10px;
