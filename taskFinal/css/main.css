@@ -1,0 +1,38 @@
+html, body {
+    margin: 0px;
+}
+
+.header {
+    width: 100%;
+    background-color: #1B1B1B;
+    min-height: 143px;
+    text-align: center;
+}
+
+.content-wrapper {
+    min-width: 1200px;
+
+}
+
+.navbar-menu{
+    min-height: 68px;
+    background-color: #282828;
+    width: 100%;
+}
+
+
+.main-page{
+    position: relative;
+    min-height: 866px;
+    width:100%;
+    background: url("../images/main-road.jpg") center;
+}
+
+.main-page__car{
+    position: absolute;
+    background: url("../images/car-red.png");
+    width: 640px;
+    height: 480px;
+    top: 322px;
+    left: 294px;
+}
