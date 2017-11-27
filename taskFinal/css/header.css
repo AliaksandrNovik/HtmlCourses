@@ -1,0 +1,70 @@
+.header-flex-wrapper{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.phones{
+    display: inline-block;
+    width:250px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.schedule{
+    width:250px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.location{
+    width:250px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brend{
+    margin-right: 200px;
+    width:200px;
+    height: 100%;
+    align-self: flex-start;
+}
+
+i.icons-header{
+    width:30px;
+    font-size: 46px;
+    color: red;
+}
+
+.header-text{
+    font-size: 15px;
+}
+
+.phones__text{
+    text-align: left;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+.phone__text__title{
+    color: #A84D4D;
+    font-size: 18px;
+    margin-left: 11px;
+}
+
+.schedule__text{
+    text-align: left;
+    color: whitesmoke;
+    margin-left: 19px;
+}
+.schedule__text a{
+    font-size: 13px;
+}

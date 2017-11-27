@@ -1442,7 +1442,7 @@ var Dropdown = function () {
     DATA_TOGGLE: '[data-toggle="dropdown"]',
     FORM_CHILD: '.dropdown form',
     MENU: '.dropdown-menu',
-    NAVBAR_NAV: '.navbar-nav',
+    NAVBAR_NAV: '.firm-brand-nav',
     VISIBLE_ITEMS: '.dropdown-menu .dropdown-item:not(.disabled)'
   };
   var AttachmentMap = {
@@ -1600,7 +1600,7 @@ var Dropdown = function () {
     };
 
     _proto._detectNavbar = function _detectNavbar() {
-      return $(this._element).closest('.navbar').length > 0;
+      return $(this._element).closest('.firm-brand').length > 0;
     };
 
     _proto._getPopperConfig = function _getPopperConfig() {
@@ -1880,7 +1880,7 @@ var Modal = function () {
     DATA_DISMISS: '[data-dismiss="modal"]',
     FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
     STICKY_CONTENT: '.sticky-top',
-    NAVBAR_TOGGLER: '.navbar-toggler'
+    NAVBAR_TOGGLER: '.firm-brand-toggler'
     /**
      * ------------------------------------------------------------------------
      * Class Definition
@@ -2254,7 +2254,7 @@ var Modal = function () {
           var actualMargin = $(element)[0].style.marginRight;
           var calculatedMargin = $(element).css('margin-right');
           $(element).data('margin-right', actualMargin).css('margin-right', parseFloat(calculatedMargin) - _this9._scrollbarWidth + "px");
-        }); // Adjust navbar-toggler margin
+        }); // Adjust firm-brand-toggler margin
 
         $(Selector.NAVBAR_TOGGLER).each(function (index, element) {
           var actualMargin = $(element)[0].style.marginRight;
@@ -2276,7 +2276,7 @@ var Modal = function () {
         if (typeof padding !== 'undefined') {
           $(element).css('padding-right', padding).removeData('padding-right');
         }
-      }); // Restore sticky content and navbar-toggler margin
+      }); // Restore sticky content and firm-brand-toggler margin
 
       $(Selector.STICKY_CONTENT + ", " + Selector.NAVBAR_TOGGLER).each(function (index, element) {
         var margin = $(element).data('margin-right');

@@ -2,37 +2,101 @@ html, body {
     margin: 0px;
 }
 
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
 .header {
     width: 100%;
     background-color: #1B1B1B;
     min-height: 143px;
     text-align: center;
+    position: relative;
 }
 
-.content-wrapper {
+.container {
+    position: absolute;
+    height: 100%;
     min-width: 1200px;
-
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
 }
 
-.navbar-menu{
+.navbar-menu {
+    position: relative;
     min-height: 68px;
     background-color: #282828;
     width: 100%;
 }
 
-
-.main-page{
+.main-page {
     position: relative;
     min-height: 866px;
-    width:100%;
-    background: url("../images/main-road.jpg") center;
+    width: 100%;
+    background: url("../images/main-road.jpg") center no-repeat;
 }
 
-.main-page__car{
+.main-page__car {
     position: absolute;
-    background: url("../images/car-red.png");
+    background: url("../images/car-red.png") no-repeat;
     width: 640px;
     height: 480px;
-    top: 322px;
+    top: 560px;
     left: 294px;
+}
+
+.our-car{
+    position: relative;
+    min-height: 1872px;
+    width: 100%;
+}
+
+.specials{
+    position: relative;
+    min-height: 1268px;
+    width: 100%;
+    background-color: #1A1A1A;
+}
+
+.select-car{
+    position: relative;
+    min-height: 504px;
+    width: 100%;
+    background-color: white;
+}
+
+.why-choose{
+    position: relative;
+    min-height: 629px;
+    width: 100%;
+    background-color: #1A1A1A;
+}
+
+.clients-says{
+    position: relative;
+    min-height: 598px;
+    width: 100%;
+    background-color: white;
+}
+.about{
+    position: relative;
+    min-height: 598px;
+    width: 100%;
+    background-color: #1A1A1A;
+}
+.footer{
+    position: relative;
+    min-height: 60px;
+    width: 100%;
+    background-color: #040404;
+}
+
+a {
+    font-weight: inherit;
+    color: lightgray;
+    font-size: 12px;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
 }
