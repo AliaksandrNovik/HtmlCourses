@@ -7,8 +7,7 @@
 }
 
 .phones{
-    display: inline-block;
-    width:250px;
+    width:260px;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -16,7 +15,7 @@
 }
 
 .schedule{
-    width:250px;
+    width:280px;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -32,10 +31,18 @@
 }
 
 .brend{
-    margin-right: 200px;
-    width:200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 160px;
+    width: 200px;
     height: 100%;
     align-self: flex-start;
+}
+.brand__name{
+    font-size: 40px;
+    color: whitesmoke;
+    margin-left: 10px;
 }
 
 i.icons-header{
@@ -52,6 +59,7 @@ i.icons-header{
     text-align: left;
     color: whitesmoke;
     margin-left: 5px;
+    padding-top: 7px;
 }
 
 .phone__text__title{
@@ -64,7 +72,8 @@ i.icons-header{
     text-align: left;
     color: whitesmoke;
     margin-left: 19px;
+    font-size: 28px;
 }
 .schedule__text a{
-    font-size: 13px;
+    font-size: 15px;
 }

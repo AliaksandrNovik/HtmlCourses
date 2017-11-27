@@ -13,6 +13,8 @@ a {
     min-height: 143px;
     text-align: center;
     position: relative;
+    font-family: 'Lato', sans-serif;
+    line-height: 2em;
 }
 
 .container {
@@ -36,7 +38,7 @@ a {
     position: relative;
     min-height: 866px;
     width: 100%;
-    background: url("../images/main-road.jpg") center no-repeat;
+    background: url("../images/main-road-compressor.jpg") center no-repeat;
 }
 
 .main-page__car {
@@ -44,8 +46,8 @@ a {
     background: url("../images/car-red.png") no-repeat;
     width: 640px;
     height: 480px;
-    top: 560px;
-    left: 294px;
+    top: 400px;
+    left: 194px;
 }
 
 .our-car{
