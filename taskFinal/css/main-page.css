@@ -19,14 +19,64 @@
     left: 155px;
 }
 
-.main-page__text__title a{
+.main-page__form {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    height: 450px;
+    width: 370px;
+    background-color: #1B1B1B;
+    -webkit-box-shadow: 0px 13px 50px -4px rgba(27, 27, 27, 1);
+    -moz-box-shadow: 0px 13px 50px -4px rgba(27, 27, 27, 1);
+    box-shadow: 0px 13px 50px -4px rgba(27, 27, 27, 1);
+}
+
+.main-page__form div.search{
+    height: 50px;
+    width:154px;
+    background-color: #E03637;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+}
+
+.main-page__form div.search a.text{
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.form-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.form-wrapper div.title {
+    text-align: center;
+    margin-top: 53px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.form-wrapper div.inputs{
+    height: 181px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.main-page__text__title.main-page__text__title a{
     font-size: 47px;
     color: whitesmoke;
 }
 .main-page__text__description{
     margin-top: 33px;
 }
-.main-page__text__description a{
+.main-page__text__description.main-page__text__description a{
     font-size: 13px;
     color: whitesmoke;
     line-height: 28px;
@@ -67,11 +117,37 @@ div.month12{
     margin-top: 27px;
 }
 
-.main-page__text__price a{
+.main-page__text__price.main-page__text__price a{
     font-size: 49px;
     color: whitesmoke;
 }
 
-a.price{
+a.price.price{
     color: #F73536;
+}
+
+
+select.form-control{
+    margin-top: 37px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #313131;
+    border: none;
+    color: white;
+}
+
+.have-question{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+div.have-question a.question{
+    color: whitesmoke;
+}
+
+div.have-question a.phone{
+    color: red;
+
 }

@@ -51,7 +51,8 @@ i.icons-header{
     color: red;
 }
 
-.header-text{
+a.header-text.header-text{
+    color: whitesmoke;
     font-size: 15px;
 }
 

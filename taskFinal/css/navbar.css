@@ -44,7 +44,18 @@ i.fa.fa-list-alt{
 }
 
 
-.item:focus{
-    color: darkred;
+.item{
+}
+
+.item a:focus{
+    animation: 1s change-color;
+}
+
+@keyframes change-color {
+    0%{
+    }
+    100%{
+        color: red;
+    }
 }
 
