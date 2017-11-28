@@ -1,18 +1,19 @@
-.cars-block{
+.cars-block {
     display: flex;
     flex-flow: wrap-reverse;
     justify-content: space-between;
     margin-top: 100px;
 }
 
-.car-item{
+.car-item {
     position: relative;
     margin-bottom: 45px;
     width: 264px;
     height: 266px;
+
 }
 
-.car-item div.image{
+.car-item div.image {
     display: flex;
     height: 206px;
     flex-direction: column-reverse;
@@ -22,32 +23,59 @@
     background-size: cover;
 }
 
-.car1{
+.car-item div.description {
+    height: 60px;
+    font-size: 15px;
+    margin-top: 13px;
+    font-family: 'Vollkorn SC', serif;
+    font-weight: bold;
+}
+
+.description a {
+    display: inline-block;
+}
+
+.description a.gas {
+    float: left;
+}
+
+.description a.dsg {
+    float: right;
+}
+
+.car1 {
     background: url("../images/our-car/our-car-1.jpg") center;
 }
-.car2{
+
+.car2 {
     background: url("../images/our-car/our-car-2.jpg") center;
 }
-.car3{
+
+.car3 {
     background: url("../images/our-car/our-car-3.jpg") center;
 }
-.car4{
+
+.car4 {
     background: url("../images/our-car/our-car-4.jpg") center;
 }
-.car5{
+
+.car5 {
     background: url("../images/our-car/our-car-5.jpg") center;
 }
-.car6{
+
+.car6 {
     background: url("../images/our-car/our-car-6.jpg") center;
 }
-.car7{
+
+.car7 {
     background: url("../images/our-car/our-car-7.jpg") center;
 }
-.car8{
+
+.car8 {
     background: url("../images/our-car/our-car-8.jpg") center;
 }
 
-.image_wrapper{
+.image_wrapper {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -55,26 +83,106 @@
     justify-content: baseline;
 }
 
-.car-item div.description{
-    height: 60px;
-    background-color: orangered;
-}
-
-.car-item div.image__price{
+.car-item div.image__price {
     display: flex;
     position: relative;
-    opacity: 0.5;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.6);
     height: 50px;
     width: 180px;
+    padding-left: 14px;
+    padding-top: 7px;
+    font-size: 24px;
+    color: white;
 }
-.blank-triangle{
+
+.blank-triangle {
     float: right;
-    opacity: 0.5;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 50px 0 0 85px;
-    border-color: transparent transparent transparent red;
+    border-color: transparent transparent transparent rgba(255, 0, 0, 0.6);
 
+}
+
+.our-car-title {
+    margin-left: auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Vollkorn SC', serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.our-car-title-after{
+    margin-bottom: 400px;
+    letter-spacing: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    color: #777777;
+}
+
+.title-text{
+display: inline-block;
+}
+
+.left-line_red{
+margin-left: -368px;
+width: 300px;
+height: 33px;
+border-bottom: 2px solid darkgray;
+position: absolute;
+display: inline;
+}
+
+.right-line_red{
+margin-left: 69px;
+width: 300px;
+height: 33px;
+border-bottom: 2px solid darkgray;
+position: absolute;
+display: inline;
+}
+
+.red_left{
+margin-left: -67px;
+display: inline;
+height: 33px;
+position: absolute;
+width: 20px;
+border-bottom: 2px solid red;
+}
+
+.red_rigth{
+margin-left: 49px;
+display: inline;
+height: 33px;
+position: absolute;
+width: 20px;
+border-bottom: 2px solid red;
+}
+
+.left{
+margin-right: 100px;
+}
+
+
+.view-all {
+width: 150px;
+height: 50px;
+margin-left: auto;
+margin-right: auto;
+background-color: #E03637;
+}
+
+.view-all a.text{
+color: whitesmoke;
+display: block;
+text-align: center;
+margin-top: 50px;
+padding-top: 8%;
 }

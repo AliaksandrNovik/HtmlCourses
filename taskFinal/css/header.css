@@ -38,6 +38,7 @@
     width: 200px;
     height: 100%;
     align-self: flex-start;
+    font-family: 'Vollkorn SC', serif;
 }
 .brand__name{
     font-size: 40px;
