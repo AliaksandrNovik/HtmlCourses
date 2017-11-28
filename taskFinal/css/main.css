@@ -41,14 +41,7 @@ a {
     background: url("../images/main-road-compressor.jpg") center no-repeat;
 }
 
-.main-page__car {
-    position: absolute;
-    background: url("../images/car-red.png") no-repeat;
-    width: 640px;
-    height: 480px;
-    top: 400px;
-    left: 194px;
-}
+
 
 .our-car{
     position: relative;

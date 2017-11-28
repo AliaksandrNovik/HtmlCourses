@@ -1,0 +1,62 @@
+.main-page__text{
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    top: 140px;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page__car {
+    position: absolute;
+    background: url("../images/car-red.png") no-repeat;
+    width: 640px;
+    height: 480px;
+    top: 400px;
+    left: 155px;
+}
+
+.main-page__text__title a{
+    font-size: 47px;
+    color: whitesmoke;
+}
+.main-page__text__description{
+    margin-top: 33px;
+}
+.main-page__text__description a{
+    font-size: 13px;
+    color: whitesmoke;
+    line-height: 28px;
+}
+
+.main-page__text__learnmore{
+    margin-top: 38px;
+    width: 151px;
+    height: 50px;
+    background-color: #E03637;
+    position: relative;
+}
+
+.main-page__text__learnmore a.text{
+    display: block;
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+
+}
+
+.main-page__text__price a{
+    margin-top: 27px;
+}
+
+.main-page__text__price a{
+    font-size: 49px;
+    color: whitesmoke;
+}
+
+a.price{
+    color: red;
+}
