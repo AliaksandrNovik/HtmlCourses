@@ -1,4 +1,5 @@
 .main-page__text{
+
     position: absolute;
     width: 640px;
     height: 480px;
@@ -6,6 +7,7 @@
     left: 5px;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Slab', serif;
 }
 
 .main-page__car {
@@ -48,7 +50,18 @@
 
 }
 
-.main-page__text__price a{
+.main-page__text__price{
+    display: flex;
+}
+div.month12{
+    padding: 12px;
+}
+
+.main-page__text__price div.month12 a{
+    font-size: 17px;
+}
+
+.main-page__text__price{
     margin-top: 27px;
 }
 
@@ -58,5 +71,5 @@
 }
 
 a.price{
-    color: red;
+    color: #F73536;
 }

@@ -89,9 +89,10 @@ a {
     background-color: #040404;
 }
 
-a {
+.header-flex-wrapper a {
     font-weight: inherit;
     color: lightgray;
     font-size: 12px;
     font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+
 }

@@ -5,11 +5,11 @@
     <title>CarsSelection</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar-elems.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/main-page.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
 <section class="header">
@@ -44,15 +44,32 @@
 <section class="navbar-menu">
     <div class="container">
         <div class="navbar-menu_wrapper">
-            <div class="navbar__home"><a href="javascript:void(0)">HOME</a></div>
-            <div class="navbar__inventory">INVENTORY</div>
-            <div class="navbar__services">SERVICES</div>
-            <div class="navbar__pages">PAGES</div>
-            <div class="navbar__blog">BLOG</div>
-            <div class="navbar__shop">SHOP</div>
-            <div class="navbar__contact">CONTACT</div>
-            <div class="cnavbar__ompare">COMPARE</div>
-            <div class="navbar__cart">CART</div>
+            <div class="item navbar__home"><a href="javascript:void(0)">HOME</a></div>
+            <div class="item navbar__inventory">INVENTORY</div>
+            <div class="item navbar__services">SERVICES</div>
+            <div class="item navbar__pages">PAGES</div>
+            <div class="item navbar__blog">BLOG</div>
+            <div class="item navbar__shop">SHOP</div>
+            <div class="item navbar__contact">CONTACT</div>
+            <div class="item navbar__compare">
+                <div class="navbar__compare__text">
+                    <a>COMPARE</a>
+                </div>
+                <div class="navbar__compare__icon>">
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="item navbar__cart">
+                <div class="navbar__cart__text">
+                    <a>CART</a>
+                </div>
+                <div class="navbar__cart__icon">
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
 </section>
@@ -61,10 +78,12 @@
         <div class="main-page__text">
             <div class="main-page__text__title"><a>INFINITI Q60 SERIES 2017</a></div>
             <div class="main-page__text__price">
-                <p>
-                    <a class="price">$567</a>
-                    <a>/MO FOR 12 MONTH</a>
-                </p>
+                <div class="price">
+                    <a class="price">$567</a><a>/MO</a>
+                </div>
+                <div class="month12">
+                    <a>FOR<br> 12 MONTH</a>
+                </div>
             </div>
             <div class="main-page__text__description">
                 <p>
