@@ -1,0 +1,80 @@
+.cars-block{
+    display: flex;
+    flex-flow: wrap-reverse;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.car-item{
+    position: relative;
+    margin-bottom: 45px;
+    width: 264px;
+    height: 266px;
+}
+
+.car-item div.image{
+    display: flex;
+    height: 206px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-size: cover;
+}
+
+.car1{
+    background: url("../images/our-car/our-car-1.jpg") center;
+}
+.car2{
+    background: url("../images/our-car/our-car-2.jpg") center;
+}
+.car3{
+    background: url("../images/our-car/our-car-3.jpg") center;
+}
+.car4{
+    background: url("../images/our-car/our-car-4.jpg") center;
+}
+.car5{
+    background: url("../images/our-car/our-car-5.jpg") center;
+}
+.car6{
+    background: url("../images/our-car/our-car-6.jpg") center;
+}
+.car7{
+    background: url("../images/our-car/our-car-7.jpg") center;
+}
+.car8{
+    background: url("../images/our-car/our-car-8.jpg") center;
+}
+
+.image_wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: baseline;
+}
+
+.car-item div.description{
+    height: 60px;
+    background-color: orangered;
+}
+
+.car-item div.image__price{
+    display: flex;
+    position: relative;
+    opacity: 0.5;
+    background-color: red;
+    height: 50px;
+    width: 180px;
+}
+.blank-triangle{
+    float: right;
+    opacity: 0.5;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 0 85px;
+    border-color: transparent transparent transparent red;
+
+}
