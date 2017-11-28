@@ -41,6 +41,8 @@
 }
 
 .main-page__text__learnmore a.text{
+    color: white;
+    font-size: 13px;
     display: block;
     position: absolute;
     top: 50%;  /* position the top  edge of the element at the middle of the parent */
