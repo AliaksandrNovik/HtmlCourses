@@ -117,7 +117,6 @@
 }
 
 .our-car-title-after{
-    margin-bottom: 400px;
     letter-spacing: 16px;
     margin-left: auto;
     margin-right: auto;
@@ -128,6 +127,10 @@
 
 .title-text{
 display: inline-block;
+}
+
+.white-text{
+    color: whitesmoke;
 }
 
 .left-line_red{
