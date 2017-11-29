@@ -108,7 +108,21 @@
     font-weight: 600;
     font-size: 37px;
 }
+.third{
+    font-size: 18px;
+}
 
 a.red.red.red{
     color: red;
+}
+
+h6{
+    font-family: 'Vollkorn SC', serif;
+}
+
+p.text{
+    font-size: smaller;
+    margin-top: 25px;
+    text-align: justify;
+    font-family: 'Vollkorn SC', serif;
 }

@@ -54,14 +54,12 @@
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    border: 2px solid white;
 }
 
 .car-image{
     width: 30%;
     height: 100%;
     float: left;
-    border: 2px solid white;
     font-size: 50px;
     text-align: center;
     color: white;
@@ -75,9 +73,21 @@
     display: block;
 }
 
+.car-image i.fa.fa-usd{
+    font-size: 60px;
+    margin-bottom: 6px;
+    display: block;
+    margin-top: 10px;
+}
+
 .car-text{
     width: 70%;
     height: 100%;
     float: right;
-    border: 2px solid white;
+    color: white;
+    padding: 14px;
+}
+
+.car-text h6{
+    text-align: center;
 }
