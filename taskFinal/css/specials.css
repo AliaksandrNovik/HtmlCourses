@@ -1,47 +1,114 @@
-.specials-cars{
+.specials-cars {
     position: absolute;
     height: 865px;
     width: 100%;
     display: flex;
     /* padding-top: 380px; */
-    top: 400px;
+    top: 300px;
 }
 
-.special-item{
-    width:705px;
+.special-item {
+    display: flex;
+    width: 705px;
     height: 865px;
     background-size: cover;
+    flex-direction: column-reverse;
 
 }
 
-.special-item:hover:focus{
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-.special-car1{
+.special-car1 {
     background: url("../images/special-car/spec-car-1.jpg") no-repeat center;
     background-position-x: 33%;
 }
 
-
-.special-car2{
+.special-car2 {
     background: url("../images/special-car/spec-car-2.jpg") no-repeat center;
     background-position-x: 40%;
     background-position-y: 55%;
 }
 
-.special-car3{
+.special-car3 {
     background: url("../images/special-car/spec-car-3.jpg") no-repeat center;
     background-position-x: 58%;
     background-position-y: 83%
 
 }
 
-.special-car4{
+.special-car4 {
     background: url("../images/special-car/spec-car-4.jpg") no-repeat center;
     background-position-x: 28%;
+}
+
+.discount {
+    margin-bottom: 65px;
+    width: 70%;
+    height: 140px;
+    background-color: rgba(255, 0, 0, 0.9);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.long{
+    width:85%;
+}
+
+.all-width{
+    padding: 0px 33px;
+    width:100%;
+}
+
+.without-bg{
+    background: none;
+}
+
+.flex-vertical{
+    flex-direction: column;
+}
+
+.text-block {
+    padding-left: 4px;
+    font-weight: 900;
+    font-size: 100px;
+    color: white;
+}
+
+.two-rows{
+    font-weight: 900;
+    margin-left: 10px;
+    font-size: 31px;
+    color: white;
+}
+
+.small-rows-text{
+    font-size: 20px;
+}
+
+.gas{
+    float: left;
+}
+
+.dsg{
+    margin-left: 100px;
+    float: right;
+}
+
+.row{
+    width:100%;
+}
+
+.first{
+    font-weight: 900;
+    font-size: 44px;
+}
+
+.second{
+    font-weight: 600;
+    font-size: 37px;
+}
+
+a.red.red.red{
+    color: red;
 }
