@@ -19,10 +19,11 @@
 
 .layer{
     position: absolute;
-    left: 0;
+    left: 50%;
     height: 100%;
-    width:571px;
+    width: 100%;
     opacity: 0.85;
+    transform: translate(-50%);
 }
 
 .bg-red{

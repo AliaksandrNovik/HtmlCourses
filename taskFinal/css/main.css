@@ -67,7 +67,7 @@ a {
     position: relative;
     min-height: 629px;
     width: 100%;
-    background-color: #1A1A1A;
+    background:url("../images/why-us-ca.jpg") center no-repeat;
 }
 
 .clients-says{
