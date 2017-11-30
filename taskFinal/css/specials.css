@@ -26,6 +26,12 @@
     transform: scale(1.15);
 }
 
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+    display: block;
+}
+
 .parent-wrapper{
     display: flex;
     width: 100%;

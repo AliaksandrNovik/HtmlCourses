@@ -16,7 +16,8 @@
     width: 640px;
     height: 480px;
     top: 400px;
-    left: 155px;
+    left: 110px;
+    transform: scale(1.25);
 }
 
 .main-page__form {

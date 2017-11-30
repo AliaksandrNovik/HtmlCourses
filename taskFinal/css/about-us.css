@@ -1,0 +1,58 @@
+.about-us-flex{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.about-item{
+    width:25%;
+    height: auto;
+    border: 2px solid red;
+}
+
+.about-company{
+
+}
+
+.photo-gallery{
+}
+
+.latest-posts{
+}
+
+.social-net{
+}
+
+.contacts{
+}
+
+.sales-hours{
+    position: relative;
+}
+
+.subscribe{
+    position: absolute;
+    bottom: 10px;
+    height: 60px;
+    width: 100%;
+    border: 2px solid red;
+}
+
+.service-hours{
+}
+
+.parts-hours{
+    position: relative;
+}
+
+.search-row{
+    position: absolute;
+    bottom: 10px;
+    height: 60px;
+    width: 100%;
+    border: 2px solid red;
+}
