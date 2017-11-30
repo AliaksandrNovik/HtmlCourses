@@ -16,12 +16,27 @@
 
 }
 
+.special-item:hover .parent-wrapper,
+.special-item:focus .parent-wrapper {
+    transform: scale(1.2);
+}
+
+.parent-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
 .special-car1 {
+    height: 100%;
     background: url("../images/special-car/spec-car-1.jpg") no-repeat center;
     background-position-x: 33%;
 }
 
 .special-car2 {
+    transition: all .5s;
     background: url("../images/special-car/spec-car-2.jpg") no-repeat center;
     background-position-x: 40%;
     background-position-y: 55%;
