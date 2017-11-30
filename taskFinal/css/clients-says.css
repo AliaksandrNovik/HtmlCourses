@@ -1,0 +1,87 @@
+.clients{
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.clients__text {
+    width: 500px;
+    height: 100%;
+    border: 2px solid red;
+    font-size: 43px;
+    color: red;
+    text-align: left;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.clients-says p.title{
+    line-height: 35px;
+    margin-top: 75px;
+}
+
+.feedback{
+    font-size: 15px;
+    color: dimgray;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 30px;
+    font-family: 'Indie Flower', cursive;
+
+
+}
+
+.feedback-giver{
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+}
+
+.clients__logos {
+    width: 500px;
+    height: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.logo-item{
+    width:150px;
+    height: 100px;
+    margin: 10px;
+}
+
+.feedback-faces{
+    display: flex;
+    width: 68%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.feedback-face-item{
+    border: 1px solid greenyellow;
+    min-width: 100px;
+    min-height: 100px;
+    background: url("../images/faces350.png");
+    clip-path: circle(45px at center);
+}
+
+.face1{
+    background-position-x: -3%;
+    background-position-y: 1%;
+}
+
+.face2{
+    background-position-x: 135%;
+    background-position-y: 32%;
+}
+
+.face3{
+    background-position-x: -36%;
+    background-position-y: 65%;
+}
