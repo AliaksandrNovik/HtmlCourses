@@ -1,4 +1,4 @@
-.header-flex-wrapper{
+.header-flex-wrapper {
     height: 100%;
     position: relative;
     display: flex;
@@ -6,31 +6,31 @@
     flex-direction: row-reverse;
 }
 
-.phones{
-    width:260px;
+.phones {
+    width: 260px;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.schedule{
-    width:280px;
+.schedule {
+    width: 280px;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.location{
-    width:250px;
+.location {
+    width: 250px;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.brend{
+.brend {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -40,50 +40,53 @@
     align-self: flex-start;
     font-family: 'Vollkorn SC', serif;
 }
-.brand__name{
+
+.brand__name {
     font-size: 40px;
     color: whitesmoke;
     margin-left: 10px;
 }
 
-i.icons-header{
-    width:30px;
+i.icons-header {
+    width: 30px;
     font-size: 46px;
     color: red;
 }
 
-a.header-text.header-text{
+a.header-text.header-text {
     color: whitesmoke;
     font-size: 15px;
 }
 
-.phones__text{
+.phones__text {
     text-align: left;
     color: whitesmoke;
     margin-left: 5px;
     padding-top: 7px;
 }
 
-.phone__text__title{
+.phone__text__title {
     color: #A84D4D;
     font-size: 18px;
     margin-left: 11px;
 }
 
-.schedule__text{
+.schedule__text {
     text-align: left;
     color: whitesmoke;
     margin-left: 19px;
     font-size: 28px;
 }
-.schedule__text a{
+
+.schedule__text a {
     font-size: 15px;
 }
 
-a.month{
+a.month {
     display: inline-block;
     height: 20px;
     width: 20px;
     font-size: 5px;
     line-height: 10px;
 }
+

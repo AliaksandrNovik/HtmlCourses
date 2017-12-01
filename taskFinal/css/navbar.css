@@ -43,11 +43,27 @@ i.fa.fa-list-alt{
     font-size: 33px;
 }
 
-
-.item{
+.fixed-navbar {
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    z-index: 100;
 }
 
-.item a:focus{
+.item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.item:hover{
+
+    background-color: red;
+    border-radius: 3px;
+
+}
+
+.item a:hover{
     animation: 1s change-color;
 }
 
@@ -59,3 +75,11 @@ i.fa.fa-list-alt{
     }
 }
 
+.fixed-class {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    min-height: 30px;
+}
