@@ -1,6 +1,4 @@
 $(window).scroll(function () {
-    console.log("TEST");
-    console.log($(window).scrollTop());
     var sticky = $('.navbar-menu'),
         scroll = $(window).scrollTop();
 
@@ -10,3 +8,5 @@ $(window).scroll(function () {
 
     else {sticky.removeClass('fixed-class');}
 });
+
+
