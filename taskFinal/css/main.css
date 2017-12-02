@@ -1,4 +1,5 @@
 html, body {
+    width: 100%;
     margin: 0px;
 }
 
@@ -102,3 +103,4 @@ a {
     font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
 
 }
+

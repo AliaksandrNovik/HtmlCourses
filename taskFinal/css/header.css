@@ -28,14 +28,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 10px;
 }
 
 .brend {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 160px;
-    width: 200px;
+    width: auto;
     height: 100%;
     align-self: flex-start;
     font-family: 'Vollkorn SC', serif;

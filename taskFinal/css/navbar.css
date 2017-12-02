@@ -9,9 +9,23 @@
     font-size: 17px;
 }
 
+.navbar{
+    background-color: #1A1A1A;
+}
+
+.nav{
+    margin-top: 220px;
+}
+
+.nav-item{
+    color: #1A1A1A;
+}
+
 .navbar__home a:hover{
     color: red;
 }
+
+
 
 .navbar__cart{
     display: flex;
@@ -57,10 +71,8 @@ i.fa.fa-list-alt{
 }
 
 .item:hover{
-
     background-color: red;
     border-radius: 3px;
-
 }
 
 .item a:hover{

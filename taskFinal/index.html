@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>CarsSelection</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//code.jquery.com/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/main-page.css">
@@ -17,10 +15,12 @@
     <link rel="stylesheet" type="text/css" href="css/select-car.css">
     <link rel="stylesheet" type="text/css" href="css/clients-says.css">
     <link rel="stylesheet" type="text/css" href="css/about-us.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
 </head>
 <body>
 <section class="header">
@@ -52,24 +52,18 @@
         </div>
     </div>
 </section>
-<section class="navbar-menu">
+
+<nav class="navbar-menu">
     <div class="container">
         <div class="navbar-menu_wrapper">
-            <div class="item"><a href="#our-cars"></a> </div>
-            <div class="item ">SPECIALS</div>
-            <div class="item ">SELL CAR</div>
-            <div class="item ">WHY CHOOSE US</div>
-            <div class="item "><a>CLIENTS FEEDBACK'S</a></div>
-            <div class="item ">ABOUT US</div>
-            <div class="item " style="display: none">CONTACT</div>
-            <div class="item " style="display: none">
-                <div class="navbar__compare__text">
-                    <a>COMPARE</a>
-                </div>
-                <div class="navbar__compare__icon>">
-                    <i class="fa fa-list-alt" aria-hidden="true"></i>
-                </div>
-            </div>
+            <a class="item" id="nav-our">OUR CARS</a> </a>
+            <a class="item" id="nav-special">SPECIALS</a>
+            <a class="item" id="nav-sell">SELL CAR</a>
+            <a class="item" id="nav-why">WHY CHOOSE US</a>
+            <a class="item" id="nav-feedback">CLIENTS FEEDBACK'S</a>
+            <a class="item" id="nav-about">ABOUT US</a>
+            <a class="item" style="display: none">CONTACT</a>
+
             <div class="item navbar__cart">
                 <div class="navbar__cart__text">
                     <a>CART</a>
@@ -83,7 +77,7 @@
             </div>
         </div>
     </div>
-</section>
+</nav>
 <section class="main-page">
     <div class="container">
         <div class="main-page__text">
@@ -151,7 +145,7 @@
         </div>
     </div>
 </section>
-<section class="our-car"  name="our-cars">
+<section class="our-car" id="our-cars">
     <div class="container">
         <div class="our-car-title">
             <div class="left-line_red"></div>
@@ -165,132 +159,269 @@
         <div class="our-car-title-after">
             WELCOME TO AUTO CAR
         </div>
-        <div class="cars-block">
-            <div class="car-item">
-                <div class="parent-wrapper">
-                    <div class="image car1">
-                        <div class="image_wrapper">
-                            <div class="image__price"><a>$35.000</a></div>
-                            <div class="blank-triangle"></div>
+
+        <nav class="nav nav-tabs" id="myTab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-new-tab" data-toggle="tab" href="#nav-home" role="tab"
+               aria-controls="nav-home" aria-selected="true">New cars</a>
+            <a class="nav-item nav-link" id="nav-user-tab" data-toggle="tab" href="#nav-profile" role="tab"
+               aria-controls="nav-profile" aria-selected="false">User cars</a>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="cars-block">
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car1">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$35.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI EX35, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">40/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="description">
-                    <a>INFINITI EX35, NAVI, LEATHER, ABS</a><br>
-                    <a class="gas">40/65 <img src="./images/gas.png" width="20px" height="20px"></a>
-                    <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car2">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$24.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX50, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car3">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$19.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI M50, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">60/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car4">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$22.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI M45, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car5">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$80.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX56, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car6">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$15.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX56, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car7">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$19.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX50, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car8">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$32.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX20, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="car-item">
-                <div class="parent-wrapper">
-                    <div class="image car2">
-                        <div class="image_wrapper">
-                            <div class="image__price"><a>$24.000</a></div>
-                            <div class="blank-triangle"></div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="cars-block">
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car1">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$35.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI EX35, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">40/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="description">
-                    <a>INFINITI QX50, NAVI, LEATHER, ABS</a><br>
-                    <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
-                    <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="car-item">
-                <div class="parent-wrapper">
-                    <div class="image car3">
-                        <div class="image_wrapper">
-                            <div class="image__price"><a>$19.000</a></div>
-                            <div class="blank-triangle"></div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car2">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$24.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX50, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="description">
-                    <a>INFINITI M50, NAVI, LEATHER, ABS</a><br>
-                    <a class="gas">60/65 <img src="./images/gas.png" width="20px" height="20px"></a>
-                    <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="car-item">
-                <div class="parent-wrapper">
-                    <div class="image car4">
-                        <div class="image_wrapper">
-                            <div class="image__price"><a>$22.000</a></div>
-                            <div class="blank-triangle"></div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car3">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$19.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI M50, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">60/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="description">
-                    <a>INFINITI M45, NAVI, LEATHER, ABS</a><br>
-                    <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
-                    <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="car-item">
-                <div class="parent-wrapper">
-                    <div class="image car5">
-                        <div class="image_wrapper">
-                            <div class="image__price"><a>$80.000</a></div>
-                            <div class="blank-triangle"></div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car4">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$22.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI M45, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="description">
-                    <a>INFINITI QX56, NAVI, LEATHER, ABS</a><br>
-                    <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
-                    <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="car-item">
-                <div class="parent-wrapper">
-                    <div class="image car6">
-                        <div class="image_wrapper">
-                            <div class="image__price"><a>$15.000</a></div>
-                            <div class="blank-triangle"></div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car5">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$80.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX56, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="description">
-                    <a>INFINITI QX56, NAVI, LEATHER, ABS</a><br>
-                    <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
-                    <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="car-item">
-                <div class="parent-wrapper">
-                    <div class="image car7">
-                        <div class="image_wrapper">
-                            <div class="image__price"><a>$19.000</a></div>
-                            <div class="blank-triangle"></div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car6">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$15.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX56, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="description">
-                    <a>INFINITI QX50, NAVI, LEATHER, ABS</a><br>
-                    <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
-                    <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="car-item">
-                <div class="parent-wrapper">
-                    <div class="image car8">
-                        <div class="image_wrapper">
-                            <div class="image__price"><a>$32.000</a></div>
-                            <div class="blank-triangle"></div>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car7">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$19.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX50, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="description">
-                    <a>INFINITI QX20, NAVI, LEATHER, ABS</a><br>
-                    <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
-                    <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                    <div class="car-item">
+                        <div class="parent-wrapper">
+                            <div class="image car8">
+                                <div class="image_wrapper">
+                                    <div class="image__price"><a>$32.000</a></div>
+                                    <div class="blank-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <a>INFINITI QX20, NAVI, LEATHER, ABS</a><br>
+                            <a class="gas">45/65 <img src="./images/gas.png" width="20px" height="20px"></a>
+                            <a class="dsg">Automatic <i class="fa fa-car" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="view-all"><a class="text" href="javascript:void(0)">View all</a></div>
     </div>
+
+    </div>
 </section>
-<section class="specials">
+<section class="specials" id="specials">
     <div class="container">
         <div class="our-car-title">
             <div class="left-line_red"></div>
@@ -306,7 +437,7 @@
         </div>
 
     </div>
-    <div class="specials-cars">
+    <div class="special-cars">
         <div class="special-item">
             <div class="parent-wrapper special-car1">
                 <div class="discount">
@@ -320,7 +451,7 @@
                 </div>
             </div>
         </div>
-        <div class="special-item">
+        <div class="special-item spec2">
             <div class="parent-wrapper special-car2">
                 <div class="discount all-width without-bg white-text flex-vertical">
                     <div class="row first"><a>INFINITI FX 50S</a></div>
@@ -332,7 +463,7 @@
                 </div>
             </div>
         </div>
-        <div class="special-item ">
+        <div class="special-item spec3">
             <div class="parent-wrapper special-car3">
                 <div class="discount long">
                     <div class="text-block">
@@ -345,7 +476,7 @@
                 </div>
             </div>
         </div>
-        <div class="special-item ">
+        <div class="special-item spec4">
             <div class="parent-wrapper special-car4">
                 <div class="discount all-width without-bg white-text flex-vertical">
                     <div class="row first"><a>INFINITI FX 35S</a></div>
@@ -359,7 +490,7 @@
         </div>
     </div>
 </section>
-<section class="select-car">
+<section class="select-car" id="select-car">
     <div class="container">
         <div class="question-block">
             <div class="red-block">
@@ -401,7 +532,7 @@
         </div>
     </div>
 </section>
-<section class="why-choose">
+<section class="why-choose" id="why-choose">
     <div class="layer bg-darkgray">
         <div class="container">
             <div class="our-car-title">
@@ -419,7 +550,7 @@
         </div>
     </div>
 </section>
-<section class="clients-says">
+<section class="clients-says" id="clients-says">
     <div class="container">
         <div class="clients wrapper">
             <div class="clients__text">
@@ -474,7 +605,7 @@
         </div>
     </div>
 </section>
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about-us-flex">
             <div class="about-item about-company">
@@ -500,9 +631,19 @@
     </div>
 </section>
 
-<section class="footer">
+<section class="footer" id="footer">
     <div class="container"></div>
 </section>
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 <script src="js/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+@media  (max-width:1210px){
+
+    /*Header*/
+    .header-flex-wrapper{
+        justify-content: center;
+    }
+    .phones{
+        display: none;
+    }
+
+
+}
+

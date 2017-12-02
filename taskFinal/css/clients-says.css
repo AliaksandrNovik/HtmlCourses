@@ -16,6 +16,8 @@
 .clients-says p.title{
     line-height: 35px;
     margin-top: 75px;
+    font-size: 39px;
+    color: red;
 }
 
 .feedback{
