@@ -104,3 +104,31 @@ a {
 
 }
 
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: red;
+}
+
+#footer a{
+    font-size: 10px;
+}
+
+#footer .navbar-menu_wrapper{
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+
+#footer a{
+    width:auto;
+    padding: 0 20px;
+}

@@ -1,6 +1,6 @@
 .cars-block {
     display: flex;
-    flex-flow: wrap-reverse;
+    flex-flow: wrap;
     justify-content: space-between;
     margin-top: 100px;
 }

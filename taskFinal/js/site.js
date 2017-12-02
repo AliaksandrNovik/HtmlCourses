@@ -56,3 +56,4 @@ $('#myTab a').on('click', function (e) {
     e.preventDefault()
     $('#myTab a[href="#profile"]').tab('show')
 })
+

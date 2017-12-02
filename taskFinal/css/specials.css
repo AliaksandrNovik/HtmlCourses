@@ -111,8 +111,12 @@
     color: white;
 }
 
-.small-rows-text{
-    font-size: 20px;
+.small-rows-text a.row-first{
+    font-size: 31px; letter-spacing: 16px;
+}
+
+.small-rows-text a.row-second{
+    font-size: 16px;
 }
 
 .gas{
@@ -120,7 +124,6 @@
 }
 
 .dsg{
-    margin-left: 100px;
     float: right;
 }
 

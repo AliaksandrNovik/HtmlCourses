@@ -470,8 +470,8 @@
                         <a>24</a>
                     </div>
                     <div class="two-rows small-rows-text">
-                        <a style="    font-size: 31px; letter-spacing: 16px;">MONTH<br></a>
-                        <a style="    font-size: 16px;">AN APPROVED CREDIT</a>
+                        <a class="row-first">MONTH<br></a>
+                        <a class="row-second">AN APPROVED CREDIT</a>
                     </div>
                 </div>
             </div>
@@ -609,30 +609,102 @@
     <div class="container">
         <div class="about-us-flex">
             <div class="about-item about-company">
-                <div class="title"><p>About AutoSelect</p></div>
+                <div class="title">About AutoSelect</div>
                 <div class="about-us-text"><p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 </p>
                 </div>
             </div>
-            <div class="about-item photo-gallery"></div>
-            <div class="about-item latest-posts"></div>
-            <div class="about-item social-net"></div>
-            <div class="about-item contacts"></div>
-            <div class="about-item sales-hours">
-                <div class="subscribe"></div>
+            <div class="about-item photo-gallery">
+                <div class="title">Photo gallery</div>
+                <div class="images">
+                    <div class="gal-item"><img src="images/our-car/our-car-1.jpg"></div>
+                    <div class="gal-item"><img src="images/our-car/our-car-2.jpg"></div>
+                    <div class="gal-item"><img src="images/our-car/our-car-3.jpg"></div>
+                    <div class="gal-item"><img src="images/our-car/our-car-4.jpg"></div>
+                </div>
             </div>
-            <div class="about-item service-hours"></div>
+            <div class="about-item latest-posts">
+                <div class="title">LATEST BLOG POSTS</div>
+                <div class="about-us-text"><p>
+                    <a>AutoSelect is a very strong company. Hope that will work with this company in future.</a>
+                    <p style="color: red;font-style: italic;text-align: right">J. Bush</p>
+                </div>
+            </div>
+            <div class="about-item social-net">
+                <div class="title">SOCIAL NETWORK</div>
+                <div class="images">
+                    <div class="gal-item youtube"><a href="http://youtube.com" target="_blank"><i class="fa fa-youtube"
+                                                                                                  aria-hidden="true"></i></a>
+                    </div>
+                    <div class="gal-item facebook"><a href="http://facebook.com" target="_blank"> <i
+                            class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                    <div class="gal-item twitter"><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"
+                                                                                                  aria-hidden="true"></i></a>
+                    </div>
+                    <div class="gal-item insta"><a href="http://www.instagram.com" target="_blank"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+            <div class="about-item contacts">
+                <div class="title">Get in contact</div>
+                <div class="contact-item">
+                    <div class="contact-item__icon"><i class="fa fa-map-marker icons-header" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-item__text"><a>9228 Jacobson Trafficway Apt. 777 California USA</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item__icon"><i class="fa fa-phone icons-header" aria-hidden="true"></i></div>
+                    <div class="contact-item__text"><a>+375 33 605 33 10</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item__icon"><i class="fa fa-envelope icons-header" aria-hidden="true"></i></div>
+                    <div class="contact-item__text">na49526@yandex.ru</div>
+                </div>
+            </div>
+            <div class="about-item sales-hours">
+                <div class="title">SALES HOURS</div>
+                <div class="hours-text"><a><a class="dimgray-color">Monday-Friday:</a>&nbsp;&nbsp;09:00AM -
+                    09:00PM</a><br>
+                    <a><a class="dimgray-color">Saturday:</a>&nbsp;&nbsp; 09:00AM - 07:00PM</a>
+                    <a><a class="dimgray-color"> Sunday:</a> &nbsp;&nbsp;Closed</a>
+                </div>
+                <div class="title">SUBSCRIBE</div>
+                <div class="hours-text"><a class="dimgray-color">Get latest updates and offers</a></div>
+            </div>
+            <div class="about-item service-hours">
+                <div class="title">SERVICE HOURS</div>
+                <div class="hours-text"><a><a class="dimgray-color">Monday-Friday:</a>&nbsp;&nbsp;09:00AM -
+                    09:00PM</a><br>
+                    <a><a class="dimgray-color">Saturday:</a>&nbsp;&nbsp; 09:00AM - 07:00PM</a>
+                    <a><a class="dimgray-color"> Sunday:</a> &nbsp;&nbsp;Closed</a>
+                </div>
+            </div>
             <div class="about-item parts-hours">
-                <div class="search-row"></div>
+                <div class="title">PARTS HOURS</div>
+                <div class="hours-text"><a><a class="dimgray-color">Monday-Friday:</a>&nbsp;&nbsp;09:00AM -
+                    09:00PM</a><br>
+                    <a><a class="dimgray-color">Saturday:</a>&nbsp;&nbsp; 09:00AM - 07:00PM</a>
+                    <a><a class="dimgray-color"> Sunday:</a> &nbsp;&nbsp;Closed</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <section class="footer" id="footer">
-    <div class="container"></div>
+    <div class="container">
+        <div class="navbar-menu_wrapper">
+
+            <a class="item" id="nav-our">Our cars</a> </a>
+            <a class="item" id="nav-special">Specials</a>
+            <a class="item" id="nav-sell">Sell car</a>
+            <a class="item" id="nav-why">Why choose us</a>
+            <a class="item" id="nav-feedback">Clients feedbacks</a>
+            <a class="item" id="nav-about">About us</a>
+        </div>
+    </div>
 </section>
 <script
         src="https://code.jquery.com/jquery-3.1.1.min.js"
