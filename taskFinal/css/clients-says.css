@@ -4,7 +4,7 @@
 
 }
 .clients__text {
-    width: 500px;
+    width: 100%;
     height: 100%;
     font-size: 39px;
     color: red;
@@ -40,8 +40,7 @@
 }
 
 .clients__logos {
-    width: 500px;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,7 +92,7 @@
 
 .feedback-faces{
     display: flex;
-    width: 68%;
+    width: 100%;
     height: 100px;
     flex-direction: row;
     justify-content: space-around;
@@ -101,7 +100,6 @@
 }
 
 .feedback-face-item{
-    border: 1px solid greenyellow;
     min-width: 100px;
     min-height: 100px;
     background: url("../images/faces350.png");

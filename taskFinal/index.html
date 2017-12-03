@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CarsSelection</title>
+    <title>AutoSelect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./images/firm-brand/firm-brand.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -22,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+
 
 </head>
 <body>
@@ -54,56 +56,128 @@
         </div>
     </div>
 </section>
-
-<nav class="navbar-menu">
+<section class="menu">
     <div class="container">
-        <div class="navbar-menu_wrapper">
-            <a class="item" id="nav-our">OUR CARS</a> </a>
-            <a class="item" id="nav-special">SPECIALS</a>
-            <a class="item" id="nav-sell">SELL CAR</a>
-            <a class="item" id="nav-why">WHY CHOOSE US</a>
-            <a class="item" id="nav-feedback">CLIENTS FEEDBACK'S</a>
-            <a class="item" id="nav-about">ABOUT US</a>
-            <a class="item" style="display: none">CONTACT</a>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="item navbar__cart">
-                <div class="navbar__cart__text">
-                    <a>CART</a>
-                </div>
-                <div class="navbar__cart__icon">
-                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link item" id="nav-our" href="#">Our Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item" id="nav-special">Special</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item item" id="nav-sell">Sell a Car</a>
+                            <a class="dropdown-item item" id="nav-why">Why choose us</a>
+                            <a class="dropdown-item item" id="nav-feedback">CLIENTS FEEDBACK'S</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item item" id="nav-about">ABOUT US</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+                </form>
             </div>
-            <div class="search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
-        </div>
+        </nav>
     </div>
-</nav>
+
+</section>
 <section class="main-page">
     <div class="container">
-        <div class="main-page__text">
-            <div class="main-page__text__title"><a>INFINITI Q60 SERIES 2017</a></div>
-            <div class="main-page__text__price">
-                <div class="price">
-                    <a class="price">$567</a><a>/MO</a>
+
+
+        <div class="carousel-wrapper">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner bottom">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main-page__text">
+                                <div class="main-page__text__title"><a>INFINITI Q40 SERIES 2016</a></div>
+                                <div class="main-page__text__price">
+                                    <div class="price">
+                                        <a class="price">$667</a><a>/MO</a>
+                                    </div>
+                                    <div class="month12">
+                                        <a>FOR<br> 12 MONTH</a>
+                                    </div>
+                                </div>
+
+                                <div class="main-page__text__learnmore">
+                                    <a class="text" href="javascript:void(0)">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="d-block w-100" src="./images/car-red.png" alt="First slide">
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main-page__text">
+                                <div class="main-page__text__title"><a>INFINITI Q20 SERIES 2010</a></div>
+                                <div class="main-page__text__price">
+                                    <div class="price">
+                                        <a class="price">$367</a><a>/MO</a>
+                                    </div>
+                                    <div class="month12">
+                                        <a>FOR<br> 24 MONTH</a>
+                                    </div>
+                                </div>
+
+                                <div class="main-page__text__learnmore">
+                                    <a class="text" href="javascript:void(0)">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="d-block w-100" src="./images/slider/slider-2.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main-page__text">
+                                <div class="main-page__text__title"><a>INFINITI Q60 SERIES 2017</a></div>
+                                <div class="main-page__text__price">
+                                    <div class="price">
+                                        <a class="price">$567</a><a>/MO</a>
+                                    </div>
+                                    <div class="month12">
+                                        <a>FOR<br> 12 MONTH</a>
+                                    </div>
+                                </div>
+
+                                <div class="main-page__text__learnmore">
+                                    <a class="text" href="javascript:void(0)">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="d-block w-100" src="./images/slider/slider-3.png" alt="First slide">
+                    </div>
                 </div>
-                <div class="month12">
-                    <a>FOR<br> 12 MONTH</a>
-                </div>
-            </div>
-            <div class="main-page__text__description">
-                <p>
-                    <a>WHEN AN UNKNOWN PRINTER TOOK A GALLEY OF TYPE AND</a><br>
-                    <a>SCRAMBLED IT TO MAKE A TYPE SPECIMEN BOOK. IT HAS</a><br>
-                    <a>SURVIVED NOT ONLY FIVE CENTURES</a>
-                </p>
-            </div>
-            <div class="main-page__text__learnmore">
-                <a class="text" href="javascript:void(0)">Learn more</a>
+
             </div>
         </div>
-        <div class="main-page__car"></div>
+
+
+         <div class="main-page__car"></div>
+
         <div class="main-page__form">
             <div class="form-wrapper">
                 <div class="title">
@@ -146,6 +220,14 @@
 
         </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </section>
 <section class="our-car" id="our-cars">
     <div class="container">
@@ -554,25 +636,29 @@
                     <div class="image"><img src="images/why-us/why-1.png"></div>
                     <div class="title">WIDE RANGE OF BRANDS</div>
                     <div class="description">A pleasant, outgoing personality who always gets on well with others.
-                        AutoSelect will always be noticed and popular in a group.</div>
+                        AutoSelect will always be noticed and popular in a group.
+                    </div>
                 </div>
                 <div class="why-item">
                     <div class="image"><img src="images/why-us/why-2.png"></div>
                     <div class="title">FINANCING MADE EASY</div>
                     <div class="description">A pleasant, outgoing personality who always gets on well with others.
-                        AutoSelect will always be noticed and popular in a group.</div>
+                        AutoSelect will always be noticed and popular in a group.
+                    </div>
                 </div>
                 <div class="why-item">
                     <div class="image"><img src="images/why-us/why-3.png"></div>
                     <div class="title">TRUSTED BY THOUSANDS</div>
                     <div class="description">A pleasant, outgoing personality who always gets on well with others.
-                        AutoSelect will always be noticed and popular in a group.</div>
+                        AutoSelect will always be noticed and popular in a group.
+                    </div>
                 </div>
                 <div class="why-item">
                     <div class="image"><img src="images/why-us/why-4.png"></div>
                     <div class="title">CAR SERVCIE & MAINTANCE</div>
                     <div class="description">A pleasant, outgoing personality who always gets on well with others.
-                        AutoSelect will always be noticed and popular in a group.</div>
+                        AutoSelect will always be noticed and popular in a group.
+                    </div>
                 </div>
             </div>
         </div>
@@ -744,6 +830,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
         integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+
 <script src="js/site.js"></script>
+
+
+<script type="text/javascript" src="js/slider.js">
+
+</script>
 </body>
 </html>

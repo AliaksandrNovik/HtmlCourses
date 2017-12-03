@@ -1,12 +1,23 @@
 html, body {
     width: 100%;
-    margin: 0px;
+    margin: 0;
+    min-width: 320px;
 }
 
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
 }
+
+section{
+    min-width: 420px;
+    z-index: 0;
+}
+section.menu{
+
+    z-index: 100;
+}
+
 
 .header {
     width: 100%;
@@ -16,16 +27,19 @@ a {
     position: relative;
     font-family: 'Lato', sans-serif;
     line-height: 2em;
+    height: auto;
 }
 
 .container {
-    position: absolute;
+    position: relative;
     height: 100%;
-    min-width: 1200px;
-    align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 1200px;
+    /* align-items: center; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     box-sizing: border-box;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 
 .navbar-menu {
@@ -45,6 +59,7 @@ a {
     min-height: 866px;
     width: 100%;
     background: url("../images/road.jpg") center no-repeat;
+    background-size: cover;
 }
 
 
@@ -64,7 +79,7 @@ a {
 
 .select-car{
     position: relative;
-    min-height: 504px;
+    min-height: 704px;
     width: 100%;
     background-color: white;
 }
@@ -74,6 +89,7 @@ a {
     min-height: 629px;
     width: 100%;
     background:url("../images/why-us-ca.jpg") center no-repeat;
+
 }
 
 .clients-says{
@@ -131,4 +147,34 @@ a:active {
 #footer a{
     width:auto;
     padding: 0 20px;
+}
+
+
+.carousel{
+    position: absolute;
+    width: 640px;
+    height: 866px;
+    top: 0px;
+    left: 110px;
+}
+
+.carousel-wrapper{
+    height: 866px;
+}
+
+.carousel-inner{
+   height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.carousel-caption{
+    height: 100%;
+}
+img.d-block.w-100{
+    display: block;
+    position: absolute;
+    bottom: 50px;
 }

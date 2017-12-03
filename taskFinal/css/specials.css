@@ -9,7 +9,7 @@
 
 .special-item {
     display: flex;
-    width: 705px;
+    width: 100%;
     height: 865px;
     background-size: cover;
     flex-direction: column-reverse;
@@ -56,7 +56,7 @@
 .special-car3 {
 
     flex-direction: column-reverse;
-    background: url("../images/special-car/spec-car-3.jpg") no-repeat center;
+    background: url("../images/special-car/spec-car-4.1.jpg") no-repeat center;
     background-position-x: 58%;
     background-position-y: 83%
 
@@ -111,11 +111,11 @@
     color: white;
 }
 
-.small-rows-text a.row-first{
+.small-rows-text.row-first{
     font-size: 31px; letter-spacing: 16px;
 }
 
-.small-rows-text a.row-second{
+.small-rows-text.row-second{
     font-size: 16px;
 }
 
