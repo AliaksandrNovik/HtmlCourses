@@ -59,14 +59,34 @@ section.menu{
     min-height: 866px;
     width: 100%;
     background: url("../images/road.jpg") center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+}
+
+.main-page::before{
+    background: #1A1A1A;
+    opacity: 0.2;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.main-page::after{
+
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
 
 
 
 .our-car{
     position: relative;
-    min-height: 1872px;
+    min-height: 1600px;
     width: 100%;
 }
 
