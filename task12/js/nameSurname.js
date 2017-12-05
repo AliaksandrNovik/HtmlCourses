@@ -52,7 +52,7 @@ function isPersonHasPension(age) {
 
 function getAndCheckName(NameType) {
     var inputName = prompt("Введите " + NameType + ": ");
-    while (/^[A-z ]+$/.test(inputName) === false || inputName.length <= 3 || inputName.split(" ").length >=2) {
+    while (/^[A-z,А-я ]+$/.test(inputName) === false || inputName.length <= 3 || inputName.split(" ").length >=2) {
         inputName = prompt("Введите " + NameType + " нормально: ");
     }
     return inputName;
