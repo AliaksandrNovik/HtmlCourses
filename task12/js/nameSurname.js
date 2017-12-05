@@ -52,7 +52,7 @@ function isPersonHasPension(age) {
 
 function getAndCheckName(NameType) {
     var inputName = prompt("Введите " + NameType + ": ");
-    while (!isNaN(inputName)) {
+    while (/^[A-z ]+$/.test(inputName) === false || inputName.length <= 3 || inputName.split(" ").length >=2) {
         inputName = prompt("Введите " + NameType + " нормально: ");
     }
     return inputName;
@@ -60,8 +60,12 @@ function getAndCheckName(NameType) {
 
 function checkAge() {
     var age = prompt("Возраст: ");
-    while (isNaN(age)) {
+    while (isNaN(age) || age < 6 || age > 150) {
         age = prompt("Введите Возраст нормально: ");
     }
     return age;
+}
+
+function isNameHasNoMoreThat3Symbols(name) {
+    return
 }
