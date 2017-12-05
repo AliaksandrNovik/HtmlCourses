@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+        .table-style {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .show-table {
+            visibility: hidden;
+        }
+
+        .hide-table {
+            visibility: hidden;
+        }
+
+        .button-row{
+            position: absolute;
+            top:10%;
+            left:50%;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+<body>
+
+<h1>EXAMLES</h1>
+<div class="button-row">
+    <button type="button" class="btn btn-success create-table" onclick="tableCreate()">Создать таблицу</button>
+    <button type="button" class="btn btn-danger show-table" onclick="showTable()">Показать таблицу</button>
+    <button type="button" class="btn btn-warning hide-table" onclick="hideTable()">Скрыть таблицу</button>
+
+</div>
+
+<script src="js/table.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+</body>
+</html>
