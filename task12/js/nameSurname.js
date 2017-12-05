@@ -60,12 +60,9 @@ function getAndCheckName(NameType) {
 
 function checkAge() {
     var age = prompt("Возраст: ");
-    while (isNaN(age) || age < 6 || age > 150) {
+    while (isNaN(age) || age < 6 || age > 150 || age.includes(".")) {
         age = prompt("Введите Возраст нормально: ");
     }
     return age;
 }
 
-function isNameHasNoMoreThat3Symbols(name) {
-    return
-}
