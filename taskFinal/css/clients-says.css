@@ -1,8 +1,9 @@
-.clients{
+.clients {
     flex-direction: row;
     justify-content: space-between;
 
 }
+
 .clients__text {
     width: 100%;
     height: 100%;
@@ -13,8 +14,8 @@
     padding: 15px;
 }
 
-.clients-says p.title{
-    line-height: 35px;
+.clients-says p.title {
+    line-height: 44px;
     margin-top: 75px;
     font-size: 51px;
     color: red;
@@ -22,7 +23,7 @@
     font-weight: 900;
 }
 
-.feedback{
+.feedback {
     font-size: 15px;
     color: dimgray;
     font-style: italic;
@@ -30,10 +31,9 @@
     margin-top: 30px;
     font-family: 'Indie Flower', cursive;
 
-
 }
 
-.feedback-giver{
+.feedback-giver {
     font-size: 25px;
     color: black;
     font-weight: 900;
@@ -49,34 +49,35 @@
     flex-grow: 1;
 }
 
-.logo-item{
-    width:150px;
+.logo-item {
+    cursor: pointer;
+    width: 150px;
     height: 150px;
     margin: 10px;
 
 }
 
-.logo1{
+.logo1 {
     background: url("../images/logos/logo3.png") no-repeat center;
 }
 
-.logo2{
+.logo2 {
     background: url("../images/logos/logo2.png") no-repeat center;
 }
 
-.logo3{
+.logo3 {
     background: url("../images/logos/marketstreetpub.png") no-repeat center;
 }
 
-.logo4{
+.logo4 {
     background: url("../images/logos/logo-4.png") no-repeat center;
 }
 
-.logo5{
+.logo5 {
     background: url("../images/logos/logo5.png") no-repeat center;
 }
 
-.logo6{
+.logo6 {
     background: url("../images/logos/logo6.png") no-repeat center;
 }
 
@@ -90,7 +91,7 @@
     transform: scale(2);
 }
 
-.feedback-faces{
+.feedback-faces {
     display: flex;
     width: 100%;
     height: 100px;
@@ -99,24 +100,24 @@
 
 }
 
-.feedback-face-item{
+.feedback-face-item {
     min-width: 100px;
     min-height: 100px;
     background: url("../images/faces350.png");
     clip-path: circle(45px at center);
 }
 
-.face1{
+.face1 {
     background-position-x: -3%;
     background-position-y: 1%;
 }
 
-.face2{
+.face2 {
     background-position-x: 135%;
     background-position-y: 32%;
 }
 
-.face3{
+.face3 {
     background-position-x: -36%;
     background-position-y: 65%;
 }

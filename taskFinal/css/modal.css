@@ -1,0 +1,71 @@
+.modal-content{
+    height: 600px;
+}
+.modal-body {
+    height: 100%;
+    max-height: 450px;
+}
+.modal-body .image{
+    max-height: 450px;
+    height: 100%;
+}
+
+div#exampleModal .modal-content{
+    height: auto;
+}
+
+
+
+.modal-content .title{
+    height: 60px;
+    font-size: 15px;
+    margin-top: 13px;
+    font-family: 'Vollkorn SC', serif;
+    font-weight: bold;
+}
+
+button.btn{
+    border-radius: 0px;
+}
+
+.btn.btn-secondary{
+    cursor: pointer;
+    background-color: #282828;
+    border-color: #282828;
+}
+
+.btn.btn-primary{
+    background-color: #E03637;
+    border-color:#E03637;
+
+}
+
+button.btn.btn.btn-primary:focus{
+    box-shadow: none;
+}
+
+button.btn.btn.btn-primary:active{
+    background-color: #E03637;
+    border-color:#E03637;
+    box-shadow: none
+}
+
+h5.modal-title{
+    font-family: 'Vollkorn SC', serif;
+}
+
+.green-color{
+    color: forestgreen;
+}
+
+button.close.close.close:focus{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.success-text{
+    font-family: 'Vollkorn SC', serif;
+    font-size: 15px;
+    padding: 10px;
+
+}

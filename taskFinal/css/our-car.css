@@ -1,8 +1,12 @@
 .cars-block {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 100px;
+    width:1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .car-item {
@@ -13,7 +17,7 @@
 
 }
 
-.car-item div.image {
+div.image {
     display: flex;
     height: 206px;
     flex-direction: column-reverse;
@@ -23,7 +27,7 @@
     background-size: cover;
 }
 
-.car-item div.description {
+div.description {
     height: 60px;
     font-size: 15px;
     margin-top: 13px;
@@ -82,8 +86,7 @@
     align-items: stretch;
     justify-content: baseline;
 }
-
-.car-item div.image__price {
+div.image__price {
     display: flex;
     position: relative;
     background-color: rgba(255, 0, 0, 0.6);
@@ -189,3 +192,11 @@
     margin-top: 50px;
     padding-top: 8%;
 }
+
+.our-car .tab-content{
+}
+
+.our-car .parent-wrapper:before{
+
+}
+

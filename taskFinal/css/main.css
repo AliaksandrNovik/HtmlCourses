@@ -10,7 +10,7 @@ a {
 }
 
 section{
-    min-width: 420px;
+    min-width: 320px;
     z-index: 0;
 }
 section.menu{
@@ -162,6 +162,7 @@ a:active {
 #footer .navbar-menu_wrapper{
     flex-direction: row-reverse;
     justify-content: right;
+    flex-wrap: wrap;
 }
 
 #footer a{
@@ -197,4 +198,16 @@ img.d-block.w-100{
     display: block;
     position: absolute;
     bottom: 50px;
+}
+
+.modal-body{
+
+}
+
+.simplebox:focus{
+    outline: none;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
 }

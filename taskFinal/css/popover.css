@@ -1,0 +1,15 @@
+div.popover h3.popover-header{
+    background-color: #E03637;
+    color: whitesmoke;
+    border: none;
+}
+
+div.popover-body{
+    background-color: #282828;
+    color: whitesmoke;
+}
+
+div.popover{
+    border-radius: 0px;
+}
+

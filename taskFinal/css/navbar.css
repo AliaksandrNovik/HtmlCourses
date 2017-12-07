@@ -122,8 +122,13 @@ a.nav-link.nav-link.nav-link.nav-link {
 button.navbar-toggler {
     background-color: #E03637;
 }
+
+button.navbar-toggler:hover {
+    cursor: pointer;
+}
+
 button.navbar-toggler:focus {
-    box-shadow: 0 0 0 0.2rem rgba(248, 18, 35, 0.93);
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
 }
 
 a.dropdown-item {

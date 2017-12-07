@@ -32,4 +32,5 @@
     font-style: italic;
     color: grey;
     font-size: 13px;
+    overflow: hidden;
 }

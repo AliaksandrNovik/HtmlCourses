@@ -57,3 +57,6 @@ $('#myTab a').on('click', function (e) {
     $('#myTab a[href="#profile"]').tab('show')
 })
 
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
